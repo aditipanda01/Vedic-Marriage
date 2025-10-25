@@ -1,0 +1,1 @@
+export { PropertyNoWrapper } from "./PropertyNoWrapper";

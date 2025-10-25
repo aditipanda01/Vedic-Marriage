@@ -1,0 +1,137 @@
+/* -----------------------s1 slider css end------------------------------------------ */
+.s2-graph-dashes {
+    height: 0.125rem;
+    width: 0.25rem;
+    border-radius: 999rem;
+    z-index: 20;
+    background-color: rgb(75, 85, 99, 0.3);
+  }
+  
+  .s2-image-container {
+    position: relative;
+    bottom: 1.5rem;
+    z-index: -20;
+    display: flex;
+    height: 400px;
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../assets/hourglass.jpeg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  .s2-changeBlockGradient {
+    top: -2rem;
+    height: 20rem;
+    width: 12rem;
+    opacity: 0.5;
+    filter: blur(4rem);
+    position: absolute;
+  
+    z-index: -10;
+  }
+  
+  .s2-block2-section {
+    position: absolute;
+  
+    top: 6rem;
+  
+    display: flex;
+  
+    width: 100%;
+  
+    justify-content: center;
+  
+    border-radius: 1rem;
+  }
+  
+  .s2-FadeAnimation {
+    height: 0.5rem;
+  
+    width: 2rem;
+  
+    border-radius: 0.25rem;
+  
+    background-color: rgb(229, 231, 235);
+  }
+  
+  .s2-SpringGrowAnimation {
+    content: "";
+  }
+  
+  .s2-block2-green-bar {
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(74, 222, 128, 0.6), #10b981);
+    border-radius: 0.5rem;
+  }
+  
+  .s2-graph-bars-container {
+    display: flex;
+  
+    width: 100%;
+  
+    flex-direction: column;
+  
+    align-items: center;
+  
+    gap: 0.5rem;
+  }
+  
+  .s2-SpringGrowAnimation {
+    width: 100%;
+    border-radius: 0.5rem;
+  }
+  
+  .s2-graph-bars-container:nth-child(1) .s2-SpringGrowAnimation {
+    background: linear-gradient(to bottom, rgba(251, 191, 36, 0.6), #84cc16);
+  
+    height: 6rem;
+  }
+  
+  .s2-graph-bars-container:nth-child(2) .s2-SpringGrowAnimation {
+    background: linear-gradient(to bottom, rgba(168, 85, 247, 0.6), #a855f7, #f9a8d4);
+  
+    height: 6rem;
+  }
+  
+  .s2-graph-bars-container:nth-child(3) .s2-SpringGrowAnimation {
+    background: linear-gradient(to bottom, rgba(251, 191, 36, 0.6), #ec4899);
+  
+    height: 8rem;
+  }
+  
+  .s2-graph-bars-container:nth-child(4) .s2-SpringGrowAnimation {
+    background: linear-gradient(to bottom, rgba(251, 191, 36, 0.6), #84cc16);
+  
+    height: 6rem;
+  }
+  
+  .s2-graph-bars-container:nth-child(5) .s2-SpringGrowAnimation {
+    background: linear-gradient(to bottom, rgba(251, 191, 36, 0.6), #f87171, #f9a8d4);
+  
+    height: 7rem;
+  }
+  
+  .s2-graph-bars-container:nth-child(6) .s2-SpringGrowAnimation {
+    background: linear-gradient(to bottom, rgba(168, 85, 247, 0.6), #a855f7, #f9a8d4);
+  
+    height: 9rem;
+  }
+  
+  .s2-div {
+    position: relative;
+    margin-top: 10rem;
+  }
+  
+  @media screen and ((max-width: 300px) or (max-width: 800px)) {
+    .s2-image-container {
+      width: 300px;
+    }
+  
+    .s2-div {
+      position: relative;
+      margin-top: 16rem;
+    }
+  }
+  

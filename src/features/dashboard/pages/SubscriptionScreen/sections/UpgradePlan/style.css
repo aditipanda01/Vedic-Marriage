@@ -1,0 +1,552 @@
+.upgrade-plan {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  width: 100%;
+  max-width: 342px;
+  margin: 24px auto;
+  padding: 0;
+}
+
+.upgrade-plan .upgrade-heading {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 8px;
+  padding: 16px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.upgrade-plan .frame {
+  align-items: flex-start;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-grow: 1;
+  position: relative;
+}
+
+.upgrade-plan .label {
+  align-self: stretch;
+  color: var(--black);
+  font-family: "Montserrat", Helvetica;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 20px;
+  margin-top: -1.00px;
+  position: relative;
+}
+
+.upgrade-plan .div {
+  align-items: center;
+  align-self: stretch;
+  background-color: #f7f9ff;
+  border: 1px solid;
+  border-color: #e6e6e6;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-height: 92px;
+  height: auto;
+  overflow: visible;
+  padding: 16px 8px;
+  position: relative;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.upgrade-plan .autolayout-row {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  gap: 8px;
+  height: 60px;
+  padding: 8px 0px 8px 16px;
+  position: relative;
+  width: 100%;
+}
+
+.upgrade-plan .frame-2 {
+  align-items: flex-start;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 12px;
+  position: relative;
+}
+
+.upgrade-plan .label-pt {
+  color: var(--black);
+  font-family: "Montserrat", Helvetica;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 16px;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.upgrade-plan .body {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  color: transparent;
+  display: -webkit-box;
+  font-family: "Montserrat", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 16px;
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.upgrade-plan .text-wrapper {
+  color: #000000;
+  font-family: var(--body-14pt-font-family);
+  font-size: var(--body-14pt-font-size);
+  font-style: var(--body-14pt-font-style);
+  font-weight: var(--body-14pt-font-weight);
+  letter-spacing: var(--body-14pt-letter-spacing);
+  line-height: var(--body-14pt-line-height);
+}
+
+.upgrade-plan .span {
+  color: #959595;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.upgrade-plan .action {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: -2.00px;
+  margin-top: -2.00px;
+  padding: 12px;
+  position: relative;
+}
+
+.upgrade-plan .chevron-instance {
+  height: 24px !important;
+  left: unset !important;
+  position: relative !important;
+  top: unset !important;
+  width: 24px !important;
+}
+
+.upgrade-plan .frame-3 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  margin-bottom: 0;
+  position: relative;
+  width: 100%;
+}
+
+.upgrade-plan .autolayout-row-2 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  gap: 8px;
+  height: 32px;
+  position: relative;
+  width: 100%;
+}
+
+.upgrade-plan .icon {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: -8.00px;
+  margin-top: -8.00px;
+  padding: 16px;
+  position: relative;
+}
+
+.upgrade-plan .tick-mark-instance {
+  height: 16px !important;
+  left: unset !important;
+  margin-left: -1263.00px !important;
+  margin-top: -11548.00px !important;
+  position: relative !important;
+  top: unset !important;
+  width: 16px !important;
+}
+
+.upgrade-plan .body-wrapper {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+  width: 228px;
+}
+
+.upgrade-plan .body-pt {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  color: #000000;
+  display: -webkit-box;
+  font-family: "Montserrat", Helvetica;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 16px;
+  margin-top: -1.00px;
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.upgrade-plan .design-component-instance-node {
+  height: 16px !important;
+  left: unset !important;
+  margin-left: -1263.00px !important;
+  margin-top: -11580.00px !important;
+  position: relative !important;
+  top: unset !important;
+  width: 16px !important;
+}
+
+.upgrade-plan .tick-mark-2 {
+  height: 16px !important;
+  left: unset !important;
+  margin-left: -1263.00px !important;
+  margin-top: -11612.00px !important;
+  position: relative !important;
+  top: unset !important;
+  width: 16px !important;
+}
+
+.upgrade-plan .close-instance {
+  height: 16px !important;
+  left: unset !important;
+  margin-left: -1263.00px !important;
+  margin-top: -11644.00px !important;
+  position: relative !important;
+  top: unset !important;
+  width: 16px !important;
+}
+
+.upgrade-plan .frame-wrapper {
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 8px;
+  display: flex;
+  gap: 8px;
+  height: 40px;
+  justify-content: center;
+  margin-bottom: 0;
+  position: relative;
+  width: 100%;
+  max-width: 272px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.2s ease;
+}
+
+.upgrade-plan .frame-wrapper:hover {
+  background-color: var(--orange);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.upgrade-plan .frame-wrapper:hover .body-2 {
+  color: var(--white);
+}
+
+.upgrade-plan .frame-wrapper:active {
+  transform: translateY(0);
+}
+
+.upgrade-plan .body-pt-wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+  position: relative;
+  width: 228px;
+}
+
+.upgrade-plan .body-2 {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  color: var(--orange);
+  display: -webkit-box;
+  font-family: "Montserrat", Helvetica;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 16px;
+  margin-top: -1.00px;
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.upgrade-plan .premium-plan {
+  align-items: center;
+  align-self: stretch;
+  background-color: #fffaed;
+  border: 1px solid;
+  border-color: var(--orange);
+  border-radius: 8px;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 16px;
+  overflow: visible;
+  padding: 16px 8px;
+  position: relative;
+  width: 100%;
+  min-height: 92px;
+  height: auto;
+  transition: all 0.3s ease;
+}
+
+.upgrade-plan .label-2 {
+  color: #f3bb06;
+  font-family: "Montserrat", Helvetica;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 16px;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.upgrade-plan .autolayout-row-3 {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  height: 24px;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0px 24px;
+  position: relative;
+  width: 100%;
+}
+
+.upgrade-plan .div-wrapper {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+  position: relative;
+  width: 228px;
+}
+
+.upgrade-plan .body-3 {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  color: var(--variable-collection-light-grey);
+  display: -webkit-box;
+  font-family: "Montserrat", Helvetica;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 16px;
+  margin-top: -1.00px;
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.upgrade-plan .frame-4 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.upgrade-plan .design-component-instance-node-2 {
+  height: 16px !important;
+  left: unset !important;
+  position: relative !important;
+  top: unset !important;
+  width: 16px !important;
+}
+
+.upgrade-plan .autolayout-row-4 {
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 8px;
+  display: flex;
+  gap: 8px;
+  height: 40px;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  max-width: 272px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: default;
+}
+
+.upgrade-plan .label-3 {
+  color: var(--e-84420);
+  font-family: "Montserrat", Helvetica;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 16px;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.upgrade-plan .tick-mark-3 {
+  height: 16px !important;
+  left: unset !important;
+  margin-left: -1263.00px !important;
+  margin-top: -12044.00px !important;
+  position: relative !important;
+  top: unset !important;
+  width: 16px !important;
+}
+
+.upgrade-plan .tick-mark-4 {
+  height: 16px !important;
+  left: unset !important;
+  margin-left: -1263.00px !important;
+  margin-top: -12076.00px !important;
+  position: relative !important;
+  top: unset !important;
+  width: 16px !important;
+}
+
+.upgrade-plan .tick-mark-5 {
+  height: 16px !important;
+  left: unset !important;
+  margin-left: -1263.00px !important;
+  margin-top: -12108.00px !important;
+  position: relative !important;
+  top: unset !important;
+  width: 16px !important;
+}
+
+.upgrade-plan .close-2 {
+  height: 16px !important;
+  left: unset !important;
+  margin-left: -1263.00px !important;
+  margin-top: -12140.00px !important;
+  position: relative !important;
+  top: unset !important;
+  width: 16px !important;
+}
+
+.upgrade-plan .label-4 {
+  color: var(--style);
+  font-family: "Montserrat", Helvetica;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 16px;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.upgrade-plan .tick-mark-6 {
+  height: 16px !important;
+  left: unset !important;
+  margin-left: -1263.00px !important;
+  margin-top: -12156.00px !important;
+  position: relative !important;
+  top: unset !important;
+  width: 16px !important;
+}
+
+.upgrade-plan .tick-mark-7 {
+  height: 16px !important;
+  left: unset !important;
+  margin-left: -1263.00px !important;
+  margin-top: -12188.00px !important;
+  position: relative !important;
+  top: unset !important;
+  width: 16px !important;
+}
+
+.upgrade-plan .tick-mark-8 {
+  height: 16px !important;
+  left: unset !important;
+  margin-left: -1263.00px !important;
+  margin-top: -12220.00px !important;
+  position: relative !important;
+  top: unset !important;
+  width: 16px !important;
+}
+
+.upgrade-plan .close-3 {
+  height: 16px !important;
+  left: unset !important;
+  margin-left: -1263.00px !important;
+  margin-top: -12252.00px !important;
+  position: relative !important;
+  top: unset !important;
+  width: 16px !important;
+}
+
+/* Expandable functionality styles */
+.upgrade-plan .action {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.upgrade-plan .action:hover {
+  opacity: 0.8;
+}
+
+.upgrade-plan .action:active {
+  transform: scale(0.95);
+}
+
+/* Chevron rotation for expanded state */
+.chevron-instance.rotated {
+  transform: rotate(180deg);
+  transition: transform 0.2s ease;
+}
+
+.chevron-instance {
+  transition: transform 0.2s ease;
+}
+
+/* Smooth expand/collapse animation */
+.frame-3,
+.frame-4 {
+  transition: all 0.3s ease;
+  overflow: hidden;
+}

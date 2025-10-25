@@ -1,0 +1,21 @@
+export enum PaymentMethod {
+  PHONEPE = 'PHONEPE',
+  RAZORPAY = 'RAZORPAY',
+  INSTAMOJO = 'INSTAMOJO',
+  STRIPE = 'STRIPE'
+}
+
+export enum PaymentStatus {
+  PENDING = 'PENDING',
+  COMPLETED = 'COMPLETED',
+  FAILED = 'FAILED',
+  REFUNDED = 'REFUNDED',
+  CANCELLED = 'CANCELLED',
+  EXPIRED = 'EXPIRED',
+  PROCESSING = 'PROCESSING'
+}
+
+export enum PaymentType {
+  ONE_TIME = 'ONE_TIME',
+  SUBSCRIPTION = 'SUBSCRIPTION'
+}

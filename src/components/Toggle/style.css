@@ -1,0 +1,29 @@
+.toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.toggle.on {
+  opacity: 1;
+}
+
+.toggle.off {
+  opacity: 0.6;
+}
+
+.toggle-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Interactive states */
+.toggle:hover {
+  transform: scale(1.05);
+}
+
+.toggle:active {
+  transform: scale(0.95);
+}

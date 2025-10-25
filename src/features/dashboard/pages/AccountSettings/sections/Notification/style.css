@@ -1,0 +1,194 @@
+.notification {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    left: 0;
+    padding: 8px 16px;
+    position: absolute;
+    
+    width: 390px;
+  }
+  
+  .notification .div-2 {
+    align-self: stretch;
+    height: 56px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .notification .element-instance {
+    background-color: unset !important;
+    height: 56px !important;
+    left: 0 !important;
+    position: absolute !important;
+    top: 0 !important;
+    width: 56px !important;
+  }
+  
+  .notification .notification-instance {
+    height: 24px !important;
+    left: 16px !important;
+    top: 16px !important;
+    width: 24px !important;
+  }
+  
+  .notification .label-2 {
+    color: var(--grey);
+    font-family: "Raleway", Helvetica;
+    font-size: 12px;
+    font-weight: 700;
+    height: 16px;
+    left: 60px;
+    letter-spacing: 0;
+    line-height: 16px;
+    position: absolute;
+    top: 7px;
+    white-space: nowrap;
+    width: 242px;
+  }
+  
+  .notification .body-2 {
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    color: var(--e-84420);
+    display: -webkit-box;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-size: 16px;
+    font-weight: 700;
+    height: 20px;
+    left: 60px;
+    letter-spacing: 0;
+    line-height: 20px;
+    overflow: hidden;
+    position: absolute;
+    text-overflow: ellipsis;
+    top: 27px;
+    white-space: nowrap;
+  }
+  
+  .notification .notification-on-off {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    height: 56px;
+    padding: 8px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .notification .frame {
+    align-items: flex-start;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 4px;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .notification .body-3 {
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    color: #000000;
+    display: -webkit-box;
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    overflow: hidden;
+    position: relative;
+    text-align: right;
+    text-overflow: ellipsis;
+    width: fit-content;
+  }
+  
+  .notification .toggle-wrapper {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    padding: 12px;
+    position: absolute;
+    width: 56px;
+    height: 72px;
+    right: 16px;
+    top: 0;
+  }
+  
+  .notification .toggle-2 {
+    left: unset !important;
+    margin-bottom: -4.00px !important;
+    margin-top: -4.00px !important;
+    position: relative !important;
+    top: unset !important;
+  }
+  
+  .notification .rows-9 {
+    align-self: stretch !important;
+    background-color: unset !important;
+    box-shadow: unset !important;
+    width: 100% !important;
+  }
+  
+  .notification .rows-10 {
+    color: var(--variable-collection-1light-grey) !important;
+    font-family: "Plus Jakarta Sans", Helvetica !important;
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    width: 326px !important;
+  }
+  
+  .notification .div-3 {
+    align-self: stretch;
+    height: 72px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .notification .element-h-instance {
+    background-color: unset !important;
+    height: 72px !important;
+    left: 302px !important;
+    position: absolute !important;
+    top: 0 !important;
+    width: 56px !important;
+  }
+  
+  .notification .toggle-3 {
+    left: 16px !important;
+    top: 24px !important;
+  }
+  
+  .notification .label-3 {
+    color: var(--black);
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-size: 12px;
+    font-weight: 700;
+    height: 16px;
+    left: 16px;
+    letter-spacing: 0;
+    line-height: 16px;
+    position: absolute;
+    top: 7px;
+    white-space: nowrap;
+    width: 286px;
+  }
+  
+  .notification .body-4 {
+    color: var(--grey);
+    font-family: "Plus Jakarta Sans", Helvetica;
+    font-size: 11px;
+    font-weight: 400;
+    left: 16px;
+    letter-spacing: 0;
+    line-height: 16px;
+    position: absolute;
+    top: 27px;
+    width: 286px;
+  }
+  

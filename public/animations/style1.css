@@ -1,0 +1,237 @@
+:root {
+    --cards: 4;
+    --cardHeight: 87vh;
+    --cardTopPadding: 1.5em;
+    --cardMargin: 4vw;
+}
+main {
+    /* margin: 24rem 0; */
+    z-index: 99;
+}
+.s1-title{
+    position: sticky;
+    top: 6vh;
+    font-size: 2rem;
+    font-weight: 600;
+    color: hsl(39, 100%, 38%);
+    text-align: center;
+    width: 100%;
+
+}
+
+.s1-card-container {
+    display: flex;
+    height: 45vh;
+    position: sticky;
+    top: 12rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6rem; /* done by Ankit */
+}
+
+.s1-card {
+    /* border: solid 2px saddlebrown; */
+
+    position: relative;
+    width: 50%;
+    background: white;
+    border-radius: 36px;
+    /* padding: 2rem; */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.s1-card-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.s1-content-section {
+    flex: 1;
+    padding: 2rem;
+}
+.s1-top-icon{
+    width: 3rem;
+    height: 3rem;
+}
+.s1-content-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.s1-content-text {
+    color: #666;
+    line-height: 1.6;
+}
+
+.s1-image-section {
+    flex: 1;
+    overflow: hidden;
+    border-radius: 0 36px 36px 0;
+}
+
+.s1-card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Card positioning classes */
+.s1-second-card {
+    bottom: -50px;
+    /* bottom: calc(-50px - 0px); */
+}
+
+.s1-third-card {
+    bottom: -125px;
+    /* bottom: calc(-125px - 40px); */
+} 
+
+.s1-fourth-card {
+    bottom: -200px;
+    /* bottom: calc(-200px - 10px); */
+}
+
+/* borderGlowingEffect effect */
+.s1-card::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 36px;
+    background: linear-gradient(45deg, #ff000020, #ffd70020, #ffffff, #ffd70020, #ff000020);
+    background-size: 400% 400%;
+    z-index: -1;
+    animation: borderGlowingEffect 8s linear infinite;
+}
+
+@keyframes borderGlowingEffect {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+@media screen and ((max-width: 300px) or (max-width: 800px)) {
+
+    .s1-card-container{
+        margin-bottom: 9rem;
+        margin-left: -8rem;
+        margin-right: -8rem;
+
+    }
+    .s1-content-title {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        color: #333;
+    }
+    .s1-content-text {
+        color: #666;
+        line-height: 1.2;
+        font-size: 0.8rem;
+    }
+}
+
+/* Responsive design */
+@media screen and ((max-width: 768px) or (max-width: 1080px)) {
+    /* .s1-card {
+        width: 90%;
+    } */
+
+    .s1-card-content {
+        flex-direction: row;
+    }
+
+    .s1-second-card {
+        bottom: -50px;
+    }
+
+    .s1-third-card {
+        bottom: -150px;
+    }
+
+    .s1-fourth-card {
+        bottom: -200px;
+    }
+    
+}
+.gsap-s1-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#gsap-s1-cards {
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(var(--cards), var(--cardHeight));
+    gap: var(--cardMargin);
+    padding-bottom: calc(var(--cards) * var(--cardTopPadding));
+    margin-bottom: var(--cardMargin);
+}
+
+#gsap-s1-card1 {
+    --index: 1;
+}
+
+#gsap-s1-card2 {
+    --index: 2;
+}
+
+#gsap-s1-card3 {
+    --index: 3;
+}
+
+#gsap-s1-card4 {
+    --index: 4;
+}
+
+.gsap-s1-card {
+    position: sticky;
+    top: 0;
+    /* padding-top: calc(var(--index) * var(--cardTopPadding)); */
+}
+
+/* #gsap-s1-card1 .gsap-s1-card-body {
+    background-color: #52b2cf;
+}
+
+#gsap-s1-card2 .gsap-s1-card-body {
+
+    background-color: #e5a36f;
+}
+
+#gsap-s1-card3 .gsap-s1-card-body {
+    background-color: #9cadce;
+}
+
+#gsap-s1-card4 .gsap-s1-card-body {
+    background-color: #d4afb9;
+} */
+
+.gsap-s1-card-body {
+    /* box-sizing: border-box; */
+    /* padding: 30px; */
+    /* border-radius: 50px; */
+    /* box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.3); */
+    height: var(--cardHeight);
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s; */
+}
+
+h2 {
+    font-size: 2.5em;
+}

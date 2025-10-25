@@ -1,0 +1,895 @@
+ /* Reset and Base Styles */
+ .pdf-download-css {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.pdf-download-css body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+    color: #333;
+    padding: 10px;
+    font-size: 11px;
+    line-height: 1.3;
+    transition: background-color 0.3s, color 0.3s;
+    position: relative; /* Ensure positioning context for watermark */
+}
+
+/* Watermark Styles */
+.pdf-download-css .watermark-screen, .watermark-print {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 300vw; /* Responsive width */
+    height: 10vw; /* Maintain aspect ratio */
+    max-width: 600px; /* Maximum size */
+    max-height: 600px;
+    transform: translate(-50%, -50%) rotate(-30deg); /* Center and rotate */
+    pointer-events: none; /* Allows interaction with underlying content */
+    z-index: 10000; /* Higher z-index to stay above all other elements */
+}
+
+.pdf-download-css .watermark-screen {
+    opacity: 1.5; /* 10% opacity for screen */
+}
+
+.pdf-download-css .watermark-print {
+    display: none; /* Hidden by default */
+    opacity: 1.5; /* 15% opacity for print */
+    
+}
+
+/* Ensure the main content is above the watermark */
+.pdf-download-css .profile-container,.pdf-download-css .selectors,.pdf-download-css .print-button,.pdf-download-css .footer {
+    position: relative;
+    z-index: 1; /* Higher z-index to stay above watermark */
+}
+
+/* Example Styles for Profile Sections */
+.pdf-download-css h1,.pdf-download-css h2,.pdf-download-css h3 {
+    font-family: 'Playfair Display', serif;
+    color: #e87c57;
+    margin-bottom: 5px;
+}
+
+.pdf-download-css h1 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.pdf-download-css h2 {
+    font-size: 14px;
+    border-bottom: 1px solid #e87c57;
+    padding-bottom: 3px;
+    margin-top: 15px;
+}
+
+.pdf-download-css h3 {
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.pdf-download-css .print-button {
+    display: none; /* Hidden by default */
+}
+
+/* Layouts */
+.pdf-download-css .profile-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: inherit; /* Ensures background color is preserved */
+    padding: 10px;
+    border-radius: 8px;
+    position: relative; /* Ensure content layers above watermark */
+    z-index: 1; /* Higher z-index to stay above watermark */
+}
+
+/* Two-Column Layout (Default) */
+.pdf-download-css .layout-two-column .profile-left,.pdf-download-css .layout-two-column .profile-right {
+    width: 48%;
+}
+
+/* Single-Column Layout */
+.pdf-download-css .layout-single-column .profile-left,.pdf-download-css .layout-single-column .profile-right {
+    width: 100%;
+}
+
+/* Grid Layout */
+.pdf-download-css .layout-grid .profile-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+}
+
+.pdf-download-css .layout-grid .profile-left,.pdf-download-css .layout-grid .profile-right {
+    width: 100%;
+}
+
+/* Profile Header */
+.pdf-download-css .profile-header {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.pdf-download-css .profile-header img.profile-pic {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 3px solid #e87c57;
+    /* object-fit: cover; */
+    margin-right: 10px;
+    background-color: #fff;
+    object-fit: contain;
+}
+
+.pdf-download-css .profile-header h2 {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.pdf-download-css .profile-header img.verified-icon {
+    width: 16px;
+    height: 16px;
+    margin-left: 5px;
+}
+
+/* Contact Info */
+.pdf-download-css .contact-info {
+    margin-top: 5px;
+    font-size: 10px;
+}
+
+.pdf-download-css .contact-info div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3px;
+}
+
+.pdf-download-css .contact-info i {
+    color: #e87c57;
+    margin-right: 5px;
+}
+
+/* Sections */
+.pdf-download-css .section {
+    margin-bottom: 7px;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #fafafa;
+}
+
+/* Fixed Size Sections */
+.pdf-download-css .fixed-size-section {
+    height: auto; /* Adjust as needed */
+    overflow: auto;
+}
+
+.pdf-download-css .fixed-size-section-x {
+    height: 195px; /* Adjust as needed */
+    overflow: auto;
+}
+
+.pdf-download-css .section-title {
+    font-size: 12px;
+    color: #e87c57;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    border-left: 3px solid #ffd700;
+    padding-left: 5px;
+}
+
+.pdf-download-css .section-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.pdf-download-css .info-item {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.pdf-download-css .info-item span.label {
+    width: 35%;
+    font-weight: bold;
+    color: #e87c57;
+}
+
+.pdf-download-css .info-item span.value {
+    width: 65%;
+    color: #555;
+}
+
+/* Preferences and Personality Layout */
+.pdf-download-css .preferences, .personality {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.pdf-download-css .preference-category,.pdf-download-css .personality-category {
+    width: 48%;
+}
+
+/* Footer */
+.pdf-download-css .footer {
+    text-align: center;
+    font-size: 9px;
+    color: #999;
+    margin-top: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Theme and Layout Selectors */
+.pdf-download-css .selectors {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+}
+
+.pdf-download-css .selector-group {
+    text-align: center;
+}
+
+.pdf-download-css .selector-group h3 {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Theme Selector */
+.pdf-download-css .theme-button {
+    margin: 0 5px;
+    padding: 0;
+    width: 60px;
+    height: 60px;
+    background-color: #e87c57;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 12px;
+    transition: transform 0.3s, border 0.3s;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.pdf-download-css .theme-button.active {
+    border: 3px solid #ffd700; /* Highlight border */
+    transform: scale(1.1);
+}
+
+.pdf-download-css .theme-button:hover {
+    transform: scale(1.05);
+}
+
+/* Layout Selector */
+.pdf-download-css .layout-button {
+    margin: 0 5px;
+    padding: 6px 12px;
+    background-color: #e87c57;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.3s;
+}
+
+.pdf-download-css .layout-button:hover {
+    background-color: #d6744d;
+}
+
+/* Additional Themes */
+
+/* Default Theme */
+.pdf-download-css .theme-default {
+    /* Inherits base styles */
+}
+
+/* Modern Theme */
+.pdf-download-css .theme-modern {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+}
+
+.pdf-download-css .theme-modern .profile-container {
+    background-color: #34495e;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.pdf-download-css .theme-modern .section {
+    background-color: #3c4d61;
+    border-color: #2c3e50;
+}
+
+.pdf-download-css .theme-modern .section-title {
+    color: #ecf0f1;
+    border-left: 3px solid #1abc9c;
+}
+
+.pdf-download-css .theme-modern .info-item span.label {
+    color: #1abc9c;
+}
+
+.pdf-download-css .theme-modern .info-item span.value {
+    color: #bdc3c7;
+}
+
+.pdf-download-css .theme-modern .footer {
+    background-color: #34495e;
+    color: #bdc3c7;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Dark Theme */
+.pdf-download-css .theme-dark {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+}
+
+.pdf-download-css .theme-dark .profile-container {
+    background-color: #2e2e2e;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.pdf-download-css .theme-dark .section {
+    background-color: #3a3a3a;
+    border-color: #555555;
+}
+
+.pdf-download-css .theme-dark .section-title {
+    color: #f0f0f0;
+    border-left: 3px solid #e74c3c;
+}
+
+.pdf-download-css .theme-dark .info-item span.label {
+    color: #e74c3c;
+}
+
+.pdf-download-css .theme-dark .info-item span.value {
+    color: #dcdcdc;
+}
+
+.pdf-download-css .theme-dark .footer {
+    background-color: #2e2e2e;
+    color: #7f8c8d;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Colorful Theme */
+.pdf-download-css .theme-colorful {
+    background-color: #ffefd5;
+    color: #2c3e50;
+}
+
+.pdf-download-css .theme-colorful .profile-container {
+    background-color: #ffdab9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.pdf-download-css .theme-colorful .section {
+    background-color: #ffe4b5;
+    border-color: #ff6347;
+}
+
+.pdf-download-css .theme-colorful .section-title {
+    color: #ff69b4;
+    border-left: 3px solid #ff4500;
+}
+
+.pdf-download-css .theme-colorful .info-item span.label {
+    color: #ff4500;
+}
+
+.pdf-download-css .theme-colorful .info-item span.value {
+    color: #2c3e50;
+}
+
+.pdf-download-css .theme-colorful .footer {
+    background-color: #ffdab9;
+    color: #d2691e;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Minimalist Theme */
+.pdf-download-css .theme-minimalist {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.pdf-download-css .theme-minimalist .profile-container {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #dddddd;
+}
+
+.pdf-download-css .theme-minimalist .section {
+    background-color: #ffffff;
+    border-color: #cccccc;
+}
+
+.pdf-download-css .theme-minimalist .section-title {
+    color: #333333;
+    border-left: 3px solid #cccccc;
+}
+
+.pdf-download-css .theme-minimalist .info-item span.label {
+    color: #333333;
+}
+
+.pdf-download-css .theme-minimalist .info-item span.value {
+    color: #555555;
+}
+
+.pdf-download-css .theme-minimalist .footer {
+    background-color: #f5f5f5;
+    color: #777777;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Elegant Theme */
+.pdf-download-css .theme-elegant {
+    background-color: #fdf6f0;
+    color: #4b3832;
+}
+
+.pdf-download-css .theme-elegant .profile-container {
+    background-color: #fffaf0;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #e6d5c1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pdf-download-css .theme-elegant .section {
+    background-color: #fff5e1;
+    border-color: #d2a679;
+}
+
+.pdf-download-css .theme-elegant .section-title {
+    color: #8b5e3c;
+    border-left: 3px solid #d2a679;
+}
+
+.pdf-download-css .theme-elegant .info-item span.label {
+    color: #d2a679;
+}
+
+.pdf-download-css .theme-elegant .info-item span.value {
+    color: #4b3832;
+}
+
+.pdf-download-css .theme-elegant .footer {
+    background-color: #fffaf0;
+    color: #a67b5b;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Vibrant Theme */
+.pdf-download-css .theme-vibrant {
+    background-color: #f0f8ff;
+    color: #333333;
+}
+
+.pdf-download-css .theme-vibrant .profile-container {
+    background-color: #e6f7ff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #99d6ff;
+}
+
+.pdf-download-css .theme-vibrant .section {
+    background-color: #cceeff;
+    border-color: #3399ff;
+}
+
+.pdf-download-css .theme-vibrant .section-title {
+    color: #00509e;
+    border-left: 3px solid #3399ff;
+}
+
+.pdf-download-css .theme-vibrant .info-item span.label {
+    color: #3399ff;
+}
+
+.pdf-download-css .theme-vibrant .info-item span.value {
+    color: #333333;
+}
+
+.pdf-download-css .theme-vibrant .footer {
+    background-color: #e6f7ff;
+    color: #3399ff;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Boxed Theme */
+.pdf-download-css .theme-boxed {
+    background-color: #f0f0f0;
+    color: #333333;
+}
+
+.pdf-download-css .theme-boxed .profile-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pdf-download-css .theme-boxed .section {
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background-color: #fafafa;
+}
+
+.pdf-download-css .theme-boxed .section + .section {
+    border-top: 2px solid #e87c57;
+}
+
+.pdf-download-css .theme-boxed .section-title {
+    color: #e87c57;
+    border-left: 3px solid #e87c57;
+    padding-left: 5px;
+}
+
+.pdf-download-css .theme-boxed .info-item span.label {
+    color: #e87c57;
+}
+
+.pdf-download-css .theme-boxed .info-item span.value {
+    color: #555555;
+}
+
+.pdf-download-css .theme-boxed .footer {
+    background-color: #ffffff;
+    color: #d2691e;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Additional Unique Themes */
+
+/* Rustic Theme */
+.pdf-download-css .theme-rustic {
+    background-color: #fff8f0;
+    color: #5b3a29;
+    font-family: 'Playfair Display', serif;
+}
+
+.pdf-download-css .theme-rustic .profile-container {
+    background-color: #fae5d3;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #d2b48c;
+}
+
+.pdf-download-css .theme-rustic .section {
+    background-color: #ffe4c4;
+    border-color: #cd853f;
+}
+
+.pdf-download-css .theme-rustic .section-title {
+    color: #cd853f;
+    border-left: 3px solid #8b4513;
+}
+
+.pdf-download-css .theme-rustic .info-item span.label {
+    color: #8b4513;
+}
+
+.pdf-download-css .theme-rustic .info-item span.value {
+    color: #5b3a29;
+}
+
+.pdf-download-css .theme-rustic .footer {
+    background-color: #fae5d3;
+    color: #8b4513;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Futuristic Theme */
+.pdf-download-css .theme-futuristic {
+    background-color: #0f0f0f;
+    color: #00ffea;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.pdf-download-css .theme-futuristic .profile-container {
+    background-color: #1a1a1a;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #00ffea;
+}
+
+.pdf-download-css .theme-futuristic .section {
+    background-color: #2e2e2e;
+    border-color: #00ffea;
+}
+
+.pdf-download-css .theme-futuristic .section-title {
+    color: #00ffea;
+    border-left: 3px solid #00ffea;
+}
+
+.pdf-download-css .theme-futuristic .info-item span.label {
+    color: #00ffea;
+}
+
+.pdf-download-css .theme-futuristic .info-item span.value {
+    color: #ffffff;
+}
+
+.pdf-download-css .theme-futuristic .footer {
+    background-color: #1a1a1a;
+    color: #00ffea;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Nature Theme */
+.pdf-download-css .theme-nature {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.pdf-download-css .theme-nature .profile-container {
+    background-color: #c8e6c9;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #66bb6a;
+}
+
+.pdf-download-css .theme-nature .section {
+    background-color: #a5d6a7;
+    border-color: #43a047;
+}
+
+.pdf-download-css .theme-nature .section-title {
+    color: #43a047;
+    border-left: 3px solid #2e7d32;
+}
+
+.pdf-download-css .theme-nature .info-item span.label {
+    color: #2e7d32;
+}
+
+.pdf-download-css .theme-nature .info-item span.value {
+    color: #1b5e20;
+}
+
+.pdf-download-css .theme-nature .footer {
+    background-color: #c8e6c9;
+    color: #388e3c;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Artistic Theme */
+.pdf-download-css .theme-artistic {
+    background-color: #f3e5f5;
+    color: #6a1b9a;
+    font-family: 'Lato', sans-serif;
+}
+
+.pdf-download-css .theme-artistic .profile-container {
+    background-color: #e1bee7;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #ba68c8;
+}
+
+.pdf-download-css .theme-artistic .section {
+    background-color: #ce93d8;
+    border-color: #ab47bc;
+}
+
+.pdf-download-css .theme-artistic .section-title {
+    color: #ab47bc;
+    border-left: 3px solid #8e24aa;
+}
+
+.pdf-download-css .theme-artistic .info-item span.label {
+    color: #8e24aa;
+}
+
+.pdf-download-css .theme-artistic .info-item span.value {
+    color: #4a148c;
+}
+
+.pdf-download-css .theme-artistic .footer {
+    background-color: #e1bee7;
+    color: #8e24aa;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Ensure the main content is above the watermark */
+.pdf-download-css .profile-container,.pdf-download-css .selectors,.pdf-download-css .print-button, .footer {
+    position: relative;
+    z-index: 1; /* Higher z-index to stay above the watermark */
+}
+
+/* Print Styles */
+@media print {
+    /* Display the print watermark and hide the screen watermark */
+    .pdf-download-css .watermark-print {
+        display: block;
+    }
+
+    .pdf-download-css .watermark-screen {
+        display: none; /* Hide screen watermark when printing */
+    }
+
+    .pdf-download-css body {
+        padding: 5px;
+        font-size: 10px;
+        /* Retain background colors and images */
+        -webkit-print-color-adjust: exact; 
+        color-adjust: exact; 
+    }
+
+    .pdf-download-css .print-button {
+        display: none; /* Hide print button when printing */
+    }
+
+    .pdf-download-css .selectors {
+        display: none; /* Hide theme and layout selectors when printing */
+    }
+
+    /* Ensure all content fits on one or more pages */
+    @page {
+        size: A4 portrait;
+        margin: 10mm;
+    }
+
+    /* Adjust layout for print */
+    .pdf-download-css .profile-container {
+        flex-direction: row;
+    }
+
+    .pdf-download-css .profile-left,.pdf-download-css .profile-right {
+        width: 48%;
+    }
+
+    /* Preserve borders */
+    .pdf-download-css .section {
+        border: 1px solid #000;
+        background-color: #fff;
+    }
+
+    .pdf-download-css .info-item span.label {
+        font-weight: bold;
+    }
+
+    /* Adjust print watermark */
+    .pdf-download-css .watermark-print {
+        opacity: 15; /* Corrected opacity */
+        width: 400vw; /* Adjust size as needed */
+        height: 15vw;
+        max-width: 450px;
+        max-height: 250px;
+    }
+
+    /* Ensure background images are printed */
+    .pdf-download-css body {
+        -webkit-print-color-adjust: exact;
+        color-adjust: exact;
+    }
+}
+
+/* Screen Styles */
+@media screen {
+    /* Theme Thumbnails */
+    .pdf-download-css .theme-button {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-size: cover;
+        background-position: center;
+        border: 2px solid #ccc;
+        transition: transform 0.3s, border-color 0.3s;
+        margin: 0 5px;
+    }
+
+    .pdf-download-css .theme-button:hover {
+        transform: scale(1.05);
+        border-color: #e87c57;
+    }
+
+    .pdf-download-css .theme-button.active {
+        border: 3px solid #ffd700; /* Highlight border for selected theme */
+        transform: scale(1.1);
+    }
+
+    /* Layout Selector Buttons */
+    .pdf-download-css .layout-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Print Button */
+    .pdf-download-css .print-button {
+        display: block;
+        width: 100px;
+        margin: 10px auto;
+        padding: 6px 12px;
+        background-color: #e87c57;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 12px;
+        text-align: center;
+        transition: background-color 0.3s;
+    }
+
+    .pdf-download-css .print-button:hover {
+        background-color: #d6744d;
+    }
+}
+/* Theme Selector Container */
+.pdf-download-css .theme-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+/* Individual Theme Item */
+.pdf-download-css .theme-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80px; /* Adjust as needed */
+}
+
+/* Theme Button Styles */
+
+.pdf-download-css .theme-button:hover {
+    transform: scale(1.05);
+    border-color: #e87c57;
+}
+
+.pdf-download-css .theme-button.active {
+    border: 3px solid #ffd700; /* Highlight border for selected theme */
+    transform: scale(1.1);
+}
+
+/* Theme Name Label */
+.pdf-download-css .theme-name {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #333;
+    text-align: center;
+    white-space: nowrap;
+}		

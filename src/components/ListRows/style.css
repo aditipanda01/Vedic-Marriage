@@ -1,0 +1,45 @@
+.list-rows {
+  height: 56px;
+  position: relative;
+  width: 352px;
+}
+
+.list-rows .body-6 {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  color: #000000;
+  display: -webkit-box;
+  font-family: "Kumbh Sans", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  left: 16px;
+  letter-spacing: 0;
+  line-height: 16px;
+  overflow: hidden;
+  position: absolute;
+  text-overflow: ellipsis;
+  width: 320px;
+}
+
+.list-rows .label-4 {
+  color: #b8b4c4;
+  font-family: "Kumbh Sans", Helvetica;
+  font-size: 12px;
+  font-weight: 400;
+  height: 16px;
+  left: 16px;
+  letter-spacing: 0;
+  line-height: 16px;
+  position: absolute;
+  top: 7px;
+  white-space: nowrap;
+  width: 320px;
+}
+
+.list-rows .label-free-text {
+  top: 23px;
+}
+
+.list-rows .free-text {
+  top: 15px;
+}

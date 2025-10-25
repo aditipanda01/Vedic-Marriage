@@ -1,0 +1,13 @@
+.dropdown-triangle {
+  height: 8px;
+  position: relative;
+  width: 8px;
+}
+
+.dropdown-triangle .polygon {
+  height: 6px;
+  left: 1px;
+  position: absolute;
+  top: 2px;
+  width: 7px;
+}

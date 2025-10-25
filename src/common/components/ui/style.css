@@ -1,0 +1,278 @@
+.iphone {
+  height: 100vh;
+  position: fixed;
+  width: 100vw;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  pointer-events: auto;
+}
+
+.iphone .rectangle {
+  background-color: #36363666;
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 9998;
+  pointer-events: auto;
+}
+
+.iphone .frame {
+  background-color: #ffffff;
+  height: 100vh;
+  left: 0;
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  width: 320px;
+  z-index: 9999;
+  pointer-events: auto;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.iphone .frame::-webkit-scrollbar {
+  width: 4px;
+}
+
+.iphone .frame::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.iphone .frame::-webkit-scrollbar-thumb {
+  background: rgba(184, 180, 196, 1);
+  border-radius: 2px;
+}
+
+.iphone .overlap-group {
+  height: auto;
+  left: 0;
+  position: relative;
+  top: 0;
+  width: 320px;
+  padding-top: 65px;
+  pointer-events: auto;
+}
+
+.iphone .div {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  left: 0;
+  position: relative;
+  top: 0;
+  width: 320px;
+  padding-top: 80px;
+  padding-bottom: 20px;
+  pointer-events: auto;
+}
+
+.iphone .frame-2 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  pointer-events: auto;
+}
+
+.iphone .autolayout-row {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  height: 48px;
+  padding: 8px;
+  position: relative;
+  width: 100%;
+  pointer-events: auto;
+}
+
+.iphone .div-2 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  padding: 12px;
+  position: relative;
+  width: 56px;
+  pointer-events: auto;
+}
+
+.iphone .home-instance {
+  left: unset !important;
+  margin-bottom: -8.00px !important;
+  margin-top: -8.00px !important;
+  position: relative !important;
+  top: unset !important;
+  pointer-events: auto;
+}
+
+.iphone .body-wrapper {
+  align-items: flex-start;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 4px;
+  position: relative;
+  pointer-events: auto;
+}
+
+.iphone .body {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  align-self: stretch;
+  color: #000000;
+  display: -webkit-box;
+  font-family: var(--body-14pt-font-family);
+  font-size: var(--body-14pt-font-size);
+  font-style: var(--body-14pt-font-style);
+  font-weight: var(--body-14pt-font-weight);
+  letter-spacing: var(--body-14pt-letter-spacing);
+  line-height: var(--body-14pt-line-height);
+  margin-top: -1.00px;
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+  pointer-events: auto;
+}
+
+.iphone .autolayout-row-2 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  height: 40px;
+  padding: 8px;
+  position: relative;
+  width: 100%;
+  pointer-events: auto;
+}
+
+.iphone .icon {
+  align-self: stretch;
+  position: relative;
+  width: 56px;
+  pointer-events: auto;
+}
+
+.iphone .body-pt {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  align-self: stretch;
+  color: #000000;
+  display: -webkit-box;
+  font-family: "Montserrat", Helvetica;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 16px;
+  margin-top: -1.00px;
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+  pointer-events: auto;
+}
+
+.iphone .design-component-instance-node {
+  height: 24px !important;
+  left: unset !important;
+  margin-bottom: -8.00px !important;
+  margin-top: -8.00px !important;
+  position: relative !important;
+  top: unset !important;
+  width: 24px !important;
+  pointer-events: auto;
+}
+
+.iphone .sign-out-instance {
+  height: 24px !important;
+  left: unset !important;
+  margin-bottom: -12.00px !important;
+  margin-top: -12.00px !important;
+  position: relative !important;
+  top: unset !important;
+  width: 24px !important;
+  pointer-events: auto;
+}
+
+.iphone .frame-3 {
+  flex: 1;
+  flex-grow: 1;
+  height: 36px;
+  margin-bottom: -6.00px;
+  margin-top: -6.00px;
+  position: relative;
+  pointer-events: auto;
+}
+
+.iphone .rectangle-2 {
+  background-color: var(--variable-collection-1light-grey);
+  border-radius: 48px;
+  height: 59px;
+  left: 315px;
+  position: absolute;
+  top: 252px;
+  width: 4px;
+  pointer-events: auto;
+}
+
+.iphone .frame-4 {
+  align-items: center;
+  background-color: #fff4e6;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 64px;
+  justify-content: center;
+  left: 0;
+  padding: 8px 22px;
+  position: fixed;
+  top: 0;
+  width: 320px;
+  z-index: 10000;
+  pointer-events: auto;
+}
+
+.iphone .final-colour-logo {
+  height: 30.01px;
+  position: relative;
+  width: 175.12px;
+  pointer-events: auto;
+}
+
+.iphone .group {
+  height: 62px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 40px;
+  pointer-events: auto;
+}
+
+.iphone .close-wrapper {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  height: 56px;
+  justify-content: center;
+  left: 264px;
+  padding: 12px;
+  position: absolute;
+  top: 4px;
+  width: 56px;
+  z-index: 10001;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.iphone .close-instance {
+  left: unset !important;
+  position: relative !important;
+  top: unset !important;
+  pointer-events: auto;
+}

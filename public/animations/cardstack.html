@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Scroll Stacked Cards</title>
+<style>
+  body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    background: #2e152d;
+  }
+
+  /* .stack-wrapper {
+    height: 400vh; 
+    position: relative;
+  } */
+
+  .card {
+    position: sticky;
+    top: 40px; /* stick point */
+    margin: 0 auto;
+    width: 80%;
+    height: 60vh;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    overflow: hidden;
+  }
+
+  /* each card enters later in the scroll, but once stuck it stays */
+  .card:nth-child(1) { z-index: 1; margin-top:   0vh; }
+  .card:nth-child(2) {z-index: 2;margin-top: 100vh;top: 15%;}
+  .card:nth-child(3) {z-index: 3;margin-top: 42vh;top: 24%;}
+  .card:nth-child(4) {z-index: 4;margin-top: 25vh;/* top: 45%; */}
+
+  /* demo visuals */
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+  }
+
+  .card-content {
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    color: #000;
+    max-width: 40%;
+  }
+
+  .card-content h2 {
+    margin: 0 0 10px;
+    font-size: 2rem;
+  }
+
+  .card-content p {
+    margin: 0 0 20px;
+  }
+
+  .card-content button {
+    padding: 10px 18px;
+    border: none;
+    background: #c14b1a;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<div class="stack-wrapper">
+
+  <div class="card">
+    <img src="https://picsum.photos/id/1015/800/600" alt="">
+    <div class="card-content">
+      <h2>Card One</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <button>Read more</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://picsum.photos/id/1025/800/600" alt="">
+    <div class="card-content">
+      <h2>Card Two</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <button>Read more</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://picsum.photos/id/1035/800/600" alt="">
+    <div class="card-content">
+      <h2>Card Three</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <button>Read more</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://picsum.photos/id/1045/800/600" alt="">
+    <div class="card-content">
+      <h2>Card Four</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <button>Read more</button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

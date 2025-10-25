@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Fix: Slider 2</title>
+    <!-- 
+      /* 🔴 DO NOT import these fonts SEGMENT*/
+    -->
+
+
+    <style>
+        .s2-graph-dashes {
+            height: 0.125rem;
+            width: 0.25rem;
+            border-radius: 999rem;
+            z-index: 20;
+            background-color: rgb(75, 85, 99, 0.3);
+        }
+
+        .s2-image-container {
+            position: relative;
+            bottom: 1.5rem;
+            z-index: -20;
+            display: flex;
+            height: 400px;
+            width: 400px;
+            align-items: center;
+            justify-content: center;
+            background-image: url('../assets/hourglass.jpeg');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .s2-changeBlockGradient {
+            top: -2rem;
+            height: 24rem;
+            width: 9rem;
+            opacity: 0.5;
+            filter: blur(6rem);
+            position: absolute;
+
+            z-index: -10;
+
+        }
+
+        .s2-block2-section {
+            position: absolute;
+
+            top: 6rem;
+
+            display: flex;
+
+            width: 100%;
+
+            justify-content: center;
+
+            border-radius: 1rem;
+
+
+
+        }
+
+        .s2-FadeAnimation {
+
+            height: 0.5rem;
+
+            width: 2rem;
+
+            border-radius: 0.25rem;
+
+            background-color: rgb(229, 231, 235);
+        }
+
+        .s2-SpringGrowAnimation {
+            content: "";
+        }
+
+        .s2-block2-green-bar {
+            width: 100%;
+            background: linear-gradient(to bottom, rgba(74, 222, 128, 0.6), #10b981);
+            border-radius: 0.5rem;
+        }
+
+        .s2-graph-bars-container {
+            display: flex;
+
+            width: 100%;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            gap: 0.5rem;
+        }
+
+        .s2-SpringGrowAnimation {
+            width: 100%;
+            border-radius: 0.5rem;
+        }
+
+        .s2-graph-bars-container:nth-child(1) .s2-SpringGrowAnimation {
+
+            background: linear-gradient(to bottom, rgba(251, 191, 36, 0.6), #84cc16);
+
+            height: 6rem;
+        }
+
+        .s2-graph-bars-container:nth-child(2) .s2-SpringGrowAnimation {
+
+            background: linear-gradient(to bottom, rgba(168, 85, 247, 0.6), #a855f7, #f9a8d4);
+
+            height: 6rem;
+        }
+
+        .s2-graph-bars-container:nth-child(3) .s2-SpringGrowAnimation {
+
+            background: linear-gradient(to bottom, rgba(251, 191, 36, 0.6), #ec4899);
+
+            height: 8rem;
+        }
+
+        .s2-graph-bars-container:nth-child(4) .s2-SpringGrowAnimation {
+
+            background: linear-gradient(to bottom, rgba(251, 191, 36, 0.6), #84cc16);
+
+            height: 6rem;
+        }
+
+        .s2-graph-bars-container:nth-child(5) .s2-SpringGrowAnimation {
+
+            background: linear-gradient(to bottom, rgba(251, 191, 36, 0.6), #f87171, #f9a8d4);
+
+            height: 7rem;
+        }
+
+        .s2-graph-bars-container:nth-child(6) .s2-SpringGrowAnimation {
+
+            background: linear-gradient(to bottom, rgba(168, 85, 247, 0.6), #a855f7, #f9a8d4);
+
+            height: 9rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="width: 100%;">
+        <section id="s2-animation-section" style="min-height: 300vh; width: 100%;">
+            <div
+                style="position: sticky; top: 0px; display: flex; height: 100vh; width: 100%; flex-direction: column; align-items: center; justify-content: center; overflow: hidden;">
+                <h1
+                    style="position: relative; bottom: 3rem; font-size: 3rem; line-height: 1; font-weight: 800; color: rgb(249,115,22);">
+                    How we Match?</h1>
+
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                    <div class="s2-image-container ">
+                        <!-- block 1-->
+                        <section
+                            style="position: absolute; top: 7rem; display: flex; width: 100%; justify-content: center; border-radius: 0.75rem;"
+                            class="s2-section-reveal-anm ">
+                            <div class="s2-changeBlockGradient bg-amber-500 absolute">
+                            </div>
+                            <section style="display: flex; align-items: center; justify-content: center; ">
+                                <svg class="absolute w-28 left-8 z-40" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 116 102">
+                                    <path
+                                        d="M 14.303 97 C 14.303 97 2.25 85.894 2.25 58.098 C 2.25 30.302 37.572 4 116.25 4"
+                                        fill="#00000000" stroke-width="1.5" stroke="#000000" stroke-dasharray="5" />
+                                </svg>
+                                <div class="relative w-[300px] bg-white rounded-3xl shadow-lg ">
+
+                                    <div class="relative overflow-hidden bg-slate-100">
+                                        <img style="box-shadow: 5px 10px inset !important;"
+                                            class="shadow-inner-md w-full h-40 object-cover rounded-t-xl"
+                                            src="https://framerusercontent.com/images/Y5TNKeX69ttaAK2d6xJmQ5JvOE.png?scale-down-to=512"
+                                            alt="">
+
+                                    </div>
+
+                                    <div class="absolute -right-4 top-4 w-36">
+                                        <div class=" bg-white rounded-2xl shadow-lg p-2">
+                                            <div
+                                                class="absolute -top-2 -right-4 bg-yellow-200 px-3 py-2 rounded-full  font-bold transform rotate-12 text-xs">
+                                                Arrives today</div>
+
+                                            <div class="mt-4 py-6">
+                                                <img src="https://framerusercontent.com/images/v05QFgyMGqCxfGTuKic22RoxiPk.png"
+                                                    alt="Nike Shoes" class="w-full h-auto" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col px-2 pt-2 pb-4 space-x-3 px-2 mt-4">
+                                        <div class="h-2 bg-slate-200 rounded w-1/2 ml-4"></div>
+                                        <div class="flex items-center justify-start ">
+                                            <div
+                                                class="w-8 h-8 text-slate-400 rounded-full flex items-center justify-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4"
+                                                    viewBox="0 0 20 20" fill="none" stroke-width="2"
+                                                    stroke="currentColor">
+                                                    <path fill-rule="evenodd"
+                                                        d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                                                        clip-rule="evenodd" />
+                                                </svg>
+                                            </div>
+                                            <div class="flex flex-col">
+                                                <div class="h-[6px] bg-slate-200 rounded w-20 mb-1"></div>
+                                                <div class="h-[6px] bg-slate-200 rounded w-12"></div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div
+                                        class="absolute bottom-4 right-4 w-8 h-8 bg-black rounded-full flex items-center justify-center">
+                                        <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="currentColor">
+                                            <path
+                                                d="M21 8.719L7.836 14.303C6.74 14.768 5.818 15 5.075 15c-.836 0-1.445-.295-1.819-.884-.485-.76-.273-1.982.559-3.272.494-.754 1.122-1.446 1.734-2.108-.144.234-1.415 2.349-.025 3.345.275.2.666.298 1.147.298.386 0 .829-.063 1.316-.19L21 8.719z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </section>
+                        </section>
+                        <!-- block 2-->
+                        <section class="s2-section-reveal-anm s2-block2-section sectionSpringGrow ">
+                            <div class="s2-changeBlockGradient" style="background-color: rgb(251,146,60,0.4);">
+                            </div>
+                            <section>
+                                <div
+                                    style="border-radius: 1.5rem; background-color: rgb(255,255,255); padding: 1.5rem; box-shadow: 0 0 #0000, 0 0 #0000, 0 4px 6px -1px rgb(0,0,0,0.1), 0 2px 4px -2px rgb(0,0,0,0.1);">
+                                    <div>
+                                        <div
+                                            style="position: absolute; bottom: 33.3333%; display: flex; gap: 0.25rem; width: 100%;">
+                                            <div class="s2-graph-dashes"></div>
+                                            <div class="s2-graph-dashes"></div>
+                                            <div class="s2-graph-dashes"></div>
+                                            <div class="s2-graph-dashes"></div>
+                                            <div class="s2-graph-dashes"></div>
+                                            <div class="s2-graph-dashes"></div>
+                                            <div class="s2-graph-dashes"></div>
+                                            <div class="s2-graph-dashes"></div>
+                                            <div class="s2-graph-dashes"></div>
+                                            <div class="s2-graph-dashes"></div>
+                                            <div class="s2-graph-dashes"></div>
+                                            <div class="s2-graph-dashes"></div>
+                                            <div class="s2-graph-dashes"></div>
+                                            <div class="s2-graph-dashes"></div>
+                                            <div class="s2-graph-dashes"></div>
+                                            <div class="s2-graph-dashes"></div>
+                                            <div class="s2-graph-dashes"></div>
+                                            <div class="s2-graph-dashes"></div>
+                                            <div class="s2-graph-dashes"></div>
+                                            <div class="s2-graph-dashes"></div>
+                                            <div class="s2-graph-dashes"></div>
+                                            <div class="s2-graph-dashes"></div>
+                                            <div class="s2-graph-dashes"></div>
+                                            <div class="s2-graph-dashes"></div>
+                                            <div class="s2-graph-dashes"></div>
+                                            <div class="s2-graph-dashes"></div>
+                                            <div class="s2-graph-dashes"></div>
+                                            <div class="s2-graph-dashes"></div>
+                                            <div class="s2-graph-dashes"></div>
+                                            <div class="s2-graph-dashes"></div>
+                                            <div class="s2-graph-dashes"></div>
+                                            <div class="s2-graph-dashes"></div>
+                                            <div class="s2-graph-dashes"></div>
+                                            <div class="s2-graph-dashes"></div>
+                                            <div class="s2-graph-dashes"></div>
+                                        </div>
+
+                                        <div
+                                            style="height: 0.5rem; width: 25%; border-radius: 0.25rem; background-color: rgb(209,213,219);">
+                                        </div>
+                                        <h2
+                                            style="margin-bottom: 1rem; margin-top: 0.25rem; font-size: 1.875rem; line-height: 2.25rem; font-weight: 700;">
+                                            CO<sub>2</sub>e</h2>
+
+                                        <div style="display: flex; margin-right: calc(0.5rem * 0); margin-left: calc(0.5rem * calc(1 - 0));" ">
+                      <div style=" width: 0.5rem; height: 0.5rem; background-color: #D1D5DB; border-radius: 50%;">
+                                        </div>
+                                        <div
+                                            style="height: 0.5rem; background-color: #D1D5DB; border-radius: 0.25rem; width: 6rem;">
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                                <div
+                                    style="display: flex; align-items: flex-end; justify-content: space-between; height: 8rem; gap: 1rem;">
+                                    <div
+                                        style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem; width: 100%;">
+                                        <div class="s2-FadeAnimation "></div>
+                                        <div class="s2-SpringGrowAnimation s2-block2-green-bar " style="height: 72px;">
+                                        </div>
+                                    </div>
+
+                                    <div class="s2-graph-bars-container ">
+                                        <div class="s2-FadeAnimation "></div>
+                                        <div class="s2-SpringGrowAnimation s2-block2-green-bar " style="height: 80px;">
+                                        </div>
+                                    </div>
+
+                                    <div class="s2-graph-bars-container ">
+                                        <div class="s2-FadeAnimation "></div>
+                                        <div class="s2-SpringGrowAnimation s2-block2-green-bar " style="height: 100px;">
+                                        </div>
+                                    </div>
+
+                                    <div class="s2-graph-bars-container ">
+                                        <div class="s2-FadeAnimation "></div>
+                                        <div class="s2-SpringGrowAnimation s2-block2-green-bar " style="height: 64px;">
+                                        </div>
+                                    </div>
+
+                                    <div class="s2-graph-bars-container ">
+                                        <div class="s2-FadeAnimation "></div>
+                                        <div class="s2-SpringGrowAnimation s2-block2-green-bar " style="height: 72px;">
+                                        </div>
+                                    </div>
+
+                                    <div class="s2-graph-bars-container ">
+                                        <div class="s2-FadeAnimation "></div>
+                                        <div class="s2-SpringGrowAnimation s2-block2-green-bar " style="height: 120px;">
+                                        </div>
+                                    </div>
+                                </div>
+                    </div>
+        </section>
+        </section>
+        <!-- block 3-->
+        <section class="s2-section-reveal-anm sectionSpringGrow "
+            style="position: absolute; top: 8rem; display: flex; width: 100%; justify-content: center; border-radius: 1rem; opacity: 0;">
+            <div class="s2-changeBlockGradient " style="background-color: rgb(251,146,60,0.4);">
+            </div>
+            <section>
+                <div
+                    style="background-color: white; border-radius: 1.5rem; padding: 1.5rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                    <div>
+                        <div style="position: absolute; bottom: 50%; display: flex; width: 100%; gap: 0.25rem;">
+                            <div class="s2-graph-dashes"></div>
+                            <div class="s2-graph-dashes"></div>
+                            <div class="s2-graph-dashes"></div>
+                            <div class="s2-graph-dashes"></div>
+                            <div class="s2-graph-dashes"></div>
+                            <div class="s2-graph-dashes"></div>
+                            <div class="s2-graph-dashes"></div>
+                            <div class="s2-graph-dashes"></div>
+                            <div class="s2-graph-dashes"></div>
+                            <div class="s2-graph-dashes"></div>
+                            <div class="s2-graph-dashes"></div>
+                            <div class="s2-graph-dashes"></div>
+                            <div class="s2-graph-dashes"></div>
+                            <div class="s2-graph-dashes"></div>
+                            <div class="s2-graph-dashes"></div>
+                            <div class="s2-graph-dashes"></div>
+                            <div class="s2-graph-dashes"></div>
+                            <div class="s2-graph-dashes"></div>
+                            <div class="s2-graph-dashes"></div>
+                            <div class="s2-graph-dashes"></div>
+                            <div class="s2-graph-dashes"></div>
+                            <div class="s2-graph-dashes"></div>
+                            <div class="s2-graph-dashes"></div>
+                            <div class="s2-graph-dashes"></div>
+                            <div class="s2-graph-dashes"></div>
+                            <div class="s2-graph-dashes"></div>
+                            <div class="s2-graph-dashes"></div>
+                            <div class="s2-graph-dashes"></div>
+                            <div class="s2-graph-dashes"></div>
+                            <div class="s2-graph-dashes"></div>
+                            <div class="s2-graph-dashes"></div>
+                            <div class="s2-graph-dashes"></div>
+                            <div class="s2-graph-dashes"></div>
+                            <div class="s2-graph-dashes"></div>
+                            <div class="s2-graph-dashes"></div>
+                        </div>
+
+                        <div
+                            style="margin-bottom: 0.5rem; height: 0.5rem; width: 25%; border-radius: 0.25rem; background-color: rgb(209,213,219); ">
+                        </div>
+
+                        <div style="display: flex; gap: 0.5rem;">
+                            <div
+                                style="width: 0.5rem; height: 0.5rem; background-color: #d1d5db; border-radius: 9999px;">
+                            </div>
+                            <div
+                                style="height: 0.5rem; background-color: rgba(156, 163, 175, 0.6); border-radius: 9999px; width: 6rem;">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div
+                        style="display: flex; height: 10rem; align-items: flex-end; justify-content: space-between; gap: 1rem;">
+                        <div class="s2-graph-bars-container ">
+                            <div class="s2-FadeAnimation "></div>
+                            <div class="s2-SpringGrowAnimation">
+                            </div>
+                        </div>
+
+                        <div class="s2-graph-bars-container ">
+                            <div class="s2-FadeAnimation "></div>
+                            <div class="s2-SpringGrowAnimation">
+                            </div>
+                        </div>
+
+                        <div class="s2-graph-bars-container ">
+                            <div class="s2-FadeAnimation "></div>
+                            <div class="s2-SpringGrowAnimation">
+                            </div>
+                        </div>
+
+                        <div class="s2-graph-bars-container ">
+                            <div class="s2-FadeAnimation "></div>
+                            <div class="s2-SpringGrowAnimation">
+                            </div>
+                        </div>
+
+                        <div class="s2-graph-bars-container ">
+                            <div class="s2-FadeAnimation "></div>
+                            <div class="s2-SpringGrowAnimation">
+                            </div>
+                        </div>
+
+                        <div class="s2-graph-bars-container ">
+                            <div class="s2-FadeAnimation "></div>
+                            <div class="s2-SpringGrowAnimation">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!-- block 4-->
+        <section class="s2-section-reveal-anm "
+            style="position: absolute; top: 6rem; display: flex; width: 100%; justify-content: center; border-radius: 1rem;">
+            <div class="s2-changeBlockGradient " style="background-color: rgb(251,146,60,0.4);">
+            </div>
+            <section style="display: flex; margin-right: calc(-2rem * 0); margin-left: calc(-2rem * calc(1 - 0));">
+                <div style="display: flex; flex-direction: column;">
+                    <div
+                        style="width: 10rem; height: 6rem; display: flex; justify-content: center; align-items: center; z-index: 4; transform: rotate(-10deg); background-color: #fffc8d; border-radius: 1rem; text-transform: uppercase; font-weight: bold;">
+                        sneakhub
+                    </div>
+                    <div
+                        style="position: relative; bottom: 3.5rem; width: 10rem; height: 6rem; display: flex; justify-content: center; align-items: center; z-index: 3; transform: rotate(-20deg); background-color: #e8e6d4; border-radius: 1rem; text-transform: uppercase; font-size: 0.75rem; font-weight: 500;">
+                        <div style="width: 4rem; height: 4rem; border: 2px solid #1f2937; border-radius: 50%;"></div>
+                    </div>
+                    <div
+                        style="position: relative; bottom: 6.25rem; width: 10rem; height: 6rem; display: flex; justify-content: center; align-items: center; z-index: 2; transform: rotate(-30deg); background-color: #a9cf78; color: white; font-size: 1.25rem; border-radius: 1rem; text-transform: capitalize; font-family: serif;">
+                        logical
+                    </div>
+                    <div
+                        style="position: relative; bottom: 8.75rem; width: 10rem; height: 6rem; display: flex; justify-content: center; align-items: center; z-index: 1; transform: rotate(-40deg); background-color: #e12321; border-radius: 1rem; text-transform: uppercase; font-size: 4rem; color: white; font-weight: bold;">
+                        rb
+                    </div>
+
+                </div>
+
+                <div style="display: flex; flex-direction: column;">
+                    <div
+                        style="width: 10rem; height: 6rem; display: flex; justify-content: center; align-items: center; z-index: 4; transform: rotate(-10deg); background-color: #615151; color: #f7fafc; border-radius: 1rem; text-transform: uppercase; font-size: 0.75rem; font-family: 'Courier New', monospace;">
+                        gemini <br />
+                        appliances
+                    </div>
+                    <div
+                        style="position: relative; bottom: 3.5rem; width: 10rem; height: 6rem; display: flex; justify-content: center; align-items: center; z-index: 3; transform: rotate(-20deg); background-color: #2d6a4f; color: #fbbf24; border-radius: 1rem; text-transform: uppercase; font-size: 1.25rem; font-family: 'Arial', sans-serif;">
+                        sample
+                    </div>
+                    <div
+                        style="position: relative; bottom: 6.25rem; width: 10rem; height: 6rem; display: flex; justify-content: center; align-items: center; z-index: 2; transform: rotate(-30deg); background-color: #3b8c3d; color: #ffffff; border-radius: 1rem; text-transform: uppercase; font-size: 0.75rem; font-family: 'Arial', sans-serif;">
+                        logo
+                    </div>
+                    <div
+                        style="position: relative; bottom: 8.75rem; width: 10rem; height: 6rem; display: flex; justify-content: center; align-items: center; z-index: 1; transform: rotate(-40deg); background-color: #ffffff; color: #1a202c; border-radius: 1rem; text-transform: uppercase; font-size: 1.25rem; font-family: 'Arial', sans-serif;">
+                        made in india
+                    </div>
+                </div>
+
+            </section>
+        </section>
+        <!-- block 5-->
+        <section class="s2-section-reveal-anm ">
+            <div class="s2-changeBlockGradient bg-orange-400/40">
+            </div>
+            <section class="flex items-start space-x-4 rounded-xl">
+
+                <div class="flex flex-col gap-4 ">
+                    <div class="flex items-start gap-2 bg-white p-4 rounded-xl shadow-lg">
+                        <img class="w-12 p-2 border rounded-full object-contain "
+                            src="https://static.vecteezy.com/system/resources/previews/019/766/223/original/amazon-logo-amazon-icon-transparent-free-png.png"
+                            alt="" />
+                        <div class="flex flex-col ">
+                            <div class="flex">
+                                <fu1l class="flex flex-col ">
+                                    <h1 class="font-medium">Amazon</h1>
+                                    <p class="leading-tight text-sm">
+                                        Payment due in 11 days
+                                        <br />
+                                        On its way
+                                    </p>
+                                    <!-- <div class="bg-gray-300 w-12 h-3 rounded-full"></div> -->
+                            </div>
+                            <div class="flex my-2 relative right-4">
+                                <img src="https://th.bing.com/th/id/OIP.qDBvlp9cQgCVR-pjYJ7yZgHaJ4?rs=1&pid=ImgDetMain"
+                                    alt="Product 3" class="p-1 bg-white w-10 h-10 object-contain mr-1" />
+                                <img src="https://th.bing.com/th/id/OIP.9Sxb3w5iK6Sl72cqWAEWLQHaHa?w=179&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                                    alt="Product 2" class="p-1 bg-white w-10 h-10 object-contain mr-1" />
+                                <img src="data:image/jpeg;base64,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"
+                                    alt="Product 4" class="p-1 bg-white w-10 h-10 object-contain mr-1" />
+                                <img src="https://www.bhphotovideo.com/images/images1000x1000/beats_by_dr_dre_900_00097_01_mixr_on_ear_headphone_971557.jpg"
+                                    alt="Product 1" class="p-1 bg-white w-10 h-10 object-contain mr-1" />
+                                <div class="size-12 flex justify-center items-center">
+                                    <img class="bg-white w-10 h-10 object-contain absolute brightness-50"
+                                        src="https://th.bing.com/th/id/OIP.cYg1vbmxnraKdPe529sYXgHaIR?w=175&h=196&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                                        alt="Product 1" />
+                                    <span class="relative text-white font-medium">+1</span>
+                                </div>
+                            </div>
+                            <div class="flex gap-2 relative right-4">
+                                <div class="w-24 h-6 bg-black rounded-full"></div>
+                                <div class="w-36 h-6 bg-gray-200 rounded-full"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- mirror -->
+                    <div class="w-full h-32 bg-gradient-to-b from-gray-400 to-gray-100 opacity-20 rounded-t-xl">
+
+                    </div>
+                </div>
+
+            </section>
+        </section>
+
+
+        <!-- block 6-->
+        <section class="s2-section-reveal-anm flex justify-center absolute w-full rounded-2xl">
+            <div class="s2-changeBlockGradient w-48 h-72 opacity-50 top-48 blur-[6rem] bg-orange-400/40 absolute -z-10">
+            </div>
+            <div class="relative h-[600px] w-full flex items-center justify-center">
+                <div class=" flex items-center gap-4 relative left-12 w-full">
+                    <div class="w-96"><img src="/assets/last-slider.svg" alt=""></div>
+                    <div class=" flex items-center justify-center absolute z-10 left-[18%] w-40 ">
+                        <video autoplay loop muted class=" rounded-xl" src="../assets/shoppable-video-1.mp4"></video>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="s2-iconContainer relative top-[350px] ">
+        <div class="s2-icon-wrapper cursor-pointer absolute w-16 h-16">
+            <div class="s2-arc-icon absolute w-full h-full flex items-center justify-center shadow-md border-orange-600/30 shadow-orange-600/10 rounded-2xl bg-white"
+                data-index="1">
+                <img src="../assets/svg/truck.svg" alt="" />
+            </div>
+        </div>
+        <div class="s2-icon-wrapper cursor-pointer absolute w-16 h-16">
+            <div class="s2-arc-icon absolute w-full h-full flex items-center justify-center shadow-md border-green-600/30 shadow-green-600/10 rounded-2xl bg-white"
+                data-index="2">
+                <img src="../assets/svg/leaves.svg" alt="" />
+            </div>
+        </div>
+        <div class="s2-icon-wrapper cursor-pointer absolute w-16 h-16">
+            <div class="s2-arc-icon absolute w-full h-full flex items-center justify-center shadow-md border-fuchsia-600/30 shadow-fuchsia-600/10 rounded-2xl bg-white"
+                data-index="3">
+                <img src="../assets/svg/graph.svg" alt="" />
+            </div>
+        </div>
+        <div class="s2-icon-wrapper cursor-pointer absolute w-16 h-16">
+            <div class="s2-arc-icon absolute w-full h-full flex items-center justify-center shadow-md border-emerald-600/30 shadow-emerald-600/10 rounded-2xl bg-white"
+                data-index="4">
+                <img src="../assets/svg/gift.svg" alt="" />
+            </div>
+        </div>
+        <div class="s2-icon-wrapper cursor-pointer absolute w-16 h-16">
+            <div class="s2-arc-icon absolute w-full h-full flex items-center justify-center shadow-md border-amber-600/30 shadow-amber-600/10 rounded-2xl bg-white"
+                data-index="5">
+                <img src="../assets/svg/time.svg" alt="" />
+            </div>
+        </div>
+        <div class="s2-icon-wrapper cursor-pointer absolute w-16 h-16">
+            <div class="s2-arc-icon absolute w-full h-full flex items-center justify-center shadow-md border-purple-600/30 shadow-purple-600/10 rounded-2xl bg-white"
+                data-index="6">
+                <img src="../assets/svg/video.svg" alt="" />
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+
+    <!-- here   -->
+    <!-- script backup -->
+    <script>
+        gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+
+        const iconWrappers = document.querySelectorAll('.s2-icon-wrapper');
+        const iconsSelector = document.querySelectorAll('.s2-arc-icon');
+        const imagesSelector = document.querySelectorAll('.s2-section-reveal-anm');
+        const radius = 350;
+        const totalIcons = iconsSelector.length;
+
+        // Initialize images
+        gsap.set(imagesSelector, { opacity: 0 });
+        gsap.set(imagesSelector[0], { opacity: 1 });
+        // Set initial opacity for all icons
+        gsap.set(iconsSelector, { opacity: 0 });
+
+        gsap.set(iconsSelector[0], { opacity: 1, scale: 1.25 });
+        gsap.set(iconsSelector[1], { opacity: 0.35, scale: 0.9 });
+        gsap.set(iconsSelector[2], { opacity: 0.35, scale: 0.9 });
+
+        // Function to calculate s2-arc-icon positions based on progress
+        function setIconPositions(progress) {
+            console.log(progress);
+            iconWrappers.forEach((wrapper, index) => {
+                const startAngledeg = -90;
+                const startAngle = startAngledeg * (Math.PI / 180);
+                // const arcLength = (3.14/180)*130;
+                const arcLength = 1.20;
+                const angle = startAngle + (index / (totalIcons - 1)) * arcLength - progress * arcLength;
+                const x = Math.cos(angle) * radius;
+                const y = Math.sin(angle) * radius;
+                gsap.set(wrapper, {
+                    x: x,
+                    y: y,
+                    rotation: 0,
+                });
+            });
+        }
+
+        // Function to calculate target progress for centering an icon
+        function getTargetProgressForIndex(index) {
+            return index / (totalIcons - 1);
+        }
+
+        // Define background colors
+        const bgGrads = [
+            '#f59e0b', // orange
+            '#22c55e', // green
+            '#d946ef', // fuchsia
+            '#a3e635', // green
+            '#fb923c', // amber
+            '#9333ea', // violet
+        ];
+
+        // Function to update visible image and s2-arc-icon opacities
+        let currentVisibleIndex = -1;
+        function updateVisibleImage(closestIndex) {
+
+            if (closestIndex !== currentVisibleIndex) {
+                currentVisibleIndex = closestIndex; // Keep track of the currently active index
+
+                imagesSelector.forEach((section, idx) => {
+                    const elemGradientDiv = section.querySelector('.s2-changeBlockGradient');
+                    const addSpringGrowVar = section.querySelectorAll('.s2-SpringGrowAnimation');
+                    const addFadeVar = section.querySelectorAll('.s2-FadeAnimation');
+                    if (idx !== closestIndex) {
+                        // Reset non-active sections
+                        gsap.to(section, {
+                            opacity: 0,
+                            // y: 40, // Slide down blocks when becoming inactive
+                            y: 20, // Slight movement instead of large jumps
+                            duration: 0.3,
+                            ease: "power2.out",
+                        });
+                        gsap.to(elemGradientDiv, {
+                            backgroundColor: 'transparent',
+                            duration: 0.3,
+                        });
+                    } else {
+                        // Animate the active section with slide-up
+                        gsap.to(
+                            section,
+                            {
+                                opacity: 1,
+                                y: 0, // Keep the position stable for smoother transition
+                                duration: 0.5, // Slightly longer duration for smooth appearance
+                                ease: "power2.out",
+                            });
+
+
+                        gsap.to(elemGradientDiv, {
+                            backgroundColor: bgGrads[closestIndex],
+                            duration: 0.5,
+                        });
+                        // Spring-grow animation for green bars
+                        gsap.fromTo(
+                            addSpringGrowVar,
+                            { scaleY: 0, transformOrigin: "bottom" },
+                            {
+                                scaleY: 1,
+                                duration: 1.5,
+                                stagger: 0,
+                                ease: "elastic.out(0.5, 0.3)",
+                            }
+                        );
+                        // Fade animation for horizontal gray bars
+                        gsap.fromTo(
+                            addFadeVar,
+                            { opacity: 0 },
+                            {
+                                opacity: 1,
+                                duration: 1,
+                                stagger: 0,
+                                ease: "power2.out",
+                            }
+                        );
+                    }
+                });
+                // Update s2-arc-icon opacities (updated here)
+                iconsSelector.forEach((icon, idx) => {
+                    const distance = Math.abs(idx - closestIndex);
+                    const isInVisibilityWindow = distance <= 2; // Show only if within 2 positions
+
+                    gsap.to(icon, {
+                        opacity: isInVisibilityWindow ? (idx === closestIndex ? 1 : 0.35) : 0, // Hide icons outside window
+                        // scale: idx === closestIndex ? 1.25 : (isInVisibilityWindow ? 0.9 : 0.5),
+                        scale: idx === closestIndex ? 1.25 : isInVisibilityWindow ? 0.9 : 0.7,
+                        duration: 0.4,
+                        ease: "power2.out",
+                        onStart: () => {
+                            icon.style.pointerEvents = isInVisibilityWindow ? 'auto' : 'none';
+                        }
+                    });
+                });
+            }
+        }
+
+        // Set initial positions
+        setIconPositions(0);
+
+        // Create the scroll trigger animation
+        gsap.to({}, {
+            scrollTrigger: {
+                trigger: '#s2-animation-section',
+                start: 'top top',
+                end: 'bottom bottom',
+                scrub: 50, // responsiveness of block re-renders also controls the duration of snap detection
+                snap: {
+
+                    // added snap here
+                    snapTo: (progress) => {
+                        // Calculate snapping points based on the number of icons
+                        const snapPoints = Array.from({ length: totalIcons }, (_, i) => i / (totalIcons - 1));
+                        return gsap.utils.snap(snapPoints, progress);
+                    },
+                    duration: 0.3, // Optional: Snap animation duration
+                    directional: true, // Snap in the direction of scrolling
+                },
+
+                onUpdate: (self) => {
+                    setIconPositions(self.progress);
+                    let closestIndex = -1;
+                    let minDistance = Infinity;
+                    iconsSelector.forEach((icon, index) => {
+                        const rect = icon.getBoundingClientRect();
+                        const centerX = rect.left + rect.width / 2;
+                        const centerY = rect.top + rect.height / 2;
+                        const distanceToCenter = Math.sqrt(
+                            (window.innerWidth / 2 - centerX) ** 2
+                            +
+                            (window.innerHeight / 2 - centerY) ** 2
+                        );
+                        if (distanceToCenter < minDistance) {
+                            minDistance = distanceToCenter;
+                            closestIndex = index;
+                        }
+                    });
+                    updateVisibleImage(closestIndex);
+                },
+            },
+        });
+
+        // Initial animation for icons appearing
+        gsap.from(iconsSelector, {
+            scale: 0,
+            opacity: 0,
+            duration: 1,
+            stagger: 0.1,
+            ease: 'back.out',
+        });
+
+        // Add click handlers to icons
+        iconsSelector.forEach((icon, index) => {
+            // Hover animations
+            icon.addEventListener('mouseenter', () => {
+                gsap.to(icon, { scale: 1.1, duration: 0.3, ease: 'back.out' });
+            });
+            icon.addEventListener('mouseleave', () => {
+                gsap.to(icon, { scale: 1, duration: 0.3, ease: 'back.out' });
+            });
+            // Click to center animation
+            icon.addEventListener('click', () => {
+                const targetProgress = getTargetProgressForIndex(index);
+                const section = document.querySelector('#s2-animation-section');
+                const scrollAmount = targetProgress * (section.offsetHeight - window.innerHeight);
+                gsap.to(window, {
+                    duration: 1,
+                    scrollTo: {
+                        y: scrollAmount,
+                        autoKill: false,
+                    },
+                    ease: 'power2.inOut',
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>

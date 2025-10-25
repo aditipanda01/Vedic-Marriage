@@ -1,0 +1,602 @@
+.profile-details {
+  background-color: #ffffff;
+  height: 5634px;
+  position: relative;
+  width: 390px;
+  overflow-x: visible; /* Allow horizontal scrolling for child elements */
+}
+
+.profile-details .profile-picture {
+  aspect-ratio: 1.16 !important;
+  background-image: url(../../../static/img/rectangle-34624145-2.png) !important;
+  height: 296px !important;
+  left: 24px !important;
+  position: absolute !important;
+  top: 72px !important;
+  width: 342px !important;
+}
+
+.profile-details .image-gallery-instance {
+  height: 296px !important;
+  left: 48px !important;
+  top: -10736px !important;
+  width: 342px !important;
+}
+
+.profile-details .profile-picture-2 {
+  height: 14px !important;
+  left: 137px !important;
+  top: 263px !important;
+  width: 68px !important;
+}
+
+.profile-details .profile-picture-3 {
+  height: 5px !important;
+  left: 9px !important;
+  top: 5px !important;
+  width: 51px !important;
+}
+
+.profile-details .profile-picture-4 {
+  border-radius: 2.85px / 2.29px !important;
+  height: 5px !important;
+  width: 6px !important;
+}
+
+.profile-details .profile-picture-5 {
+  border-radius: 2.85px / 2.29px !important;
+  height: 5px !important;
+  left: 11px !important;
+  width: 6px !important;
+}
+
+.profile-details .profile-picture-6 {
+  border-radius: 2.85px / 2.29px !important;
+  height: 5px !important;
+  left: 23px !important;
+  width: 6px !important;
+}
+
+.profile-details .profile-picture-7 {
+  border-radius: 2.85px / 2.29px !important;
+  height: 5px !important;
+  left: 34px !important;
+  width: 6px !important;
+}
+
+.profile-details .profile-picture-8 {
+  border-radius: 2.85px / 2.29px !important;
+  height: 5px !important;
+  left: 46px !important;
+  width: 6px !important;
+}
+
+.profile-details .phone-2 {
+  height: 56px;
+  left: 24px;
+  position: absolute;
+  top: 384px;
+  width: 342px;
+}
+
+.profile-details .icon {
+  background-color: unset !important;
+  height: 56px !important;
+  left: 0 !important;
+  position: absolute !important;
+  top: 0 !important;
+  width: 56px !important;
+}
+
+.profile-details .design-component-instance-node-3 {
+  height: 24px !important;
+  left: 16px !important;
+  top: 16px !important;
+  width: 24px !important;
+}
+
+.profile-details .label-5 {
+  color: #b8b4c4;
+  font-family: "Montserrat", Helvetica;
+  font-size: 11px;
+  font-weight: 700;
+  height: 16px;
+  left: 60px;
+  letter-spacing: 0;
+  line-height: 16px;
+  position: absolute;
+  top: 7px;
+  white-space: nowrap;
+  width: 226px;
+}
+
+.profile-details .body-7 {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  color: #000000;
+  display: -webkit-box;
+  font-family: "Montserrat", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  left: 60px;
+  letter-spacing: 0;
+  line-height: 16px;
+  overflow: hidden;
+  position: absolute;
+  text-overflow: ellipsis;
+  top: 27px;
+  width: 226px;
+}
+
+.profile-details .email {
+  height: 56px;
+  left: 24px;
+  position: absolute;
+  top: 440px;
+  width: 342px;
+}
+
+.profile-details .container-2 {
+  display: flex;
+  height: 40px;
+  left: 16px;
+  position: absolute;
+  top: 520px;
+  width: 100%;
+  max-width: 358px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  /* Ensure scrolling works */
+  scroll-behavior: smooth;
+  /* Force scrollbar to show */
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Make sure tabs don't wrap and can extend beyond container */
+.profile-details .container-2 > div {
+  flex-shrink: 0;
+  min-width: fit-content;
+}
+
+/* Custom scrollbar styling for webkit browsers */
+.profile-details .container-2::-webkit-scrollbar {
+  height: 6px; /* Horizontal scrollbar height */
+  display: block; /* Show scrollbar */
+}
+
+.profile-details .container-2::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.profile-details .container-2::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+.profile-details .container-2::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+.profile-details .overlap-group-wrapper {
+  background-color: #ffffff;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: var(--variable-collection-light-grey);
+  height: 40px;
+  position: relative;
+  width: 120px; /* Fixed width for Basic Info */
+}
+
+.profile-details .body-pt-wrapper {
+  height: 40px;
+  position: relative;
+}
+
+.profile-details .body-8 {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  color: var(--e-84420);
+  display: -webkit-box;
+  font-family: "Plus Jakarta Sans", Helvetica;
+  font-size: 12px;
+  font-weight: 700;
+  height: 16px;
+  left: 16px;
+  letter-spacing: 0;
+  line-height: 16px;
+  overflow: hidden;
+  position: absolute;
+  text-overflow: ellipsis;
+  top: 11px;
+  white-space: nowrap;
+}
+
+.profile-details .overlap-wrapper {
+  background-color: #ffffff;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: var(--variable-collection-light-grey);
+  height: 40px;
+  position: relative;
+  width: 80px; /* Fixed width for Astro and Family */
+}
+
+.profile-details .body-9 {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  color: var(--variable-collection-light-grey);
+  display: -webkit-box;
+  font-family: "Plus Jakarta Sans", Helvetica;
+  font-size: 12px;
+  font-weight: 700;
+  height: 16px;
+  left: 16px;
+  letter-spacing: 0;
+  line-height: 16px;
+  overflow: hidden;
+  position: absolute;
+  text-overflow: ellipsis;
+  top: 11px;
+  white-space: nowrap;
+}
+
+.profile-details .list-rows-13 {
+  background-color: #ffffff;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: var(--variable-collection-light-grey);
+  height: 40px;
+  position: relative;
+  width: 140px; /* Fixed width for Career & Education */
+}
+
+.profile-details .list-rows-14 {
+  background-color: #ffffff;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: var(--variable-collection-light-grey);
+  height: 40px;
+  position: relative;
+  width: 100px; /* Fixed width for Spirituality and Personality */
+}
+
+.profile-details .list-rows-15 {
+  background-color: #ffffff;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: var(--variable-collection-light-grey);
+  height: 40px;
+  position: relative;
+  width: 110px; /* Fixed width for Preferences */
+}
+
+.profile-details .header {
+  align-items: flex-start;
+  background: linear-gradient(
+    359deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 246, 242, 1) 100%
+  );
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 390px;
+}
+
+.profile-details .profile-header {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 4px;
+  justify-content: center;
+  padding: 0px 12px;
+  position: relative;
+  width: 100%;
+}
+
+.profile-details .container-3 {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  height: 56px;
+  margin-left: -12.00px;
+  margin-right: -12.00px;
+  padding: 8px 0px;
+  position: relative;
+  width: 390px;
+}
+
+.profile-details .back {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  padding: 12px;
+  position: relative;
+  width: 56px;
+}
+
+.profile-details .arrows-instance {
+  left: unset !important;
+  margin-bottom: -4.00px !important;
+  margin-top: -4.00px !important;
+  position: relative !important;
+  top: unset !important;
+}
+
+.profile-details .profile-info {
+  align-items: flex-start;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 4px;
+  position: relative;
+}
+
+.profile-details .title {
+  align-self: stretch;
+  color: var(--variable-collection-light-grey);
+  font-family: var(--label-11pt-font-family);
+  font-size: var(--label-11pt-font-size);
+  font-style: var(--label-11pt-font-style);
+  font-weight: var(--label-11pt-font-weight);
+  letter-spacing: var(--label-11pt-letter-spacing);
+  line-height: var(--label-11pt-line-height);
+  margin-top: -1.00px;
+  position: relative;
+}
+
+.profile-details .user-info {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 8px;
+  position: relative;
+  width: 100%;
+}
+
+.profile-details .user-name {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  color: #000000;
+  display: -webkit-box;
+  font-family: "Plus Jakarta Sans", Helvetica;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 16px;
+  margin-top: -1.00px;
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.profile-details .status-icon {
+  height: 16px !important;
+  left: unset !important;
+  position: relative !important;
+  top: unset !important;
+  width: 16px !important;
+}
+
+.profile-details .icon-2 {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: -4.00px;
+  margin-top: -4.00px;
+  padding: 12px;
+  position: relative;
+  width: 56px;
+}
+
+.profile-details .download-simple-instance {
+  left: unset !important;
+  position: relative !important;
+  top: unset !important;
+}
+
+.profile-details .edit-instance {
+  height: 24px !important;
+  left: unset !important;
+  position: relative !important;
+  top: unset !important;
+  width: 24px !important;
+}
+
+/* Tab Navigation Styles */
+.tab-navigation {
+  display: flex;
+  gap: 0;
+  padding: 0;
+  background: #ffffff;
+  border-bottom: 2px solid #e9ecef;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.tab-button {
+  padding: 16px 24px;
+  border: none;
+  background: transparent;
+  color: #6c757d;
+  border-radius: 0;
+  cursor: pointer;
+  font-family: "Plus Jakarta Sans", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  min-width: fit-content;
+  position: relative;
+}
+
+.tab-button:hover {
+  background: transparent;
+  color: #495057;
+}
+
+.tab-button.active {
+  background: transparent;
+  border-color: transparent;
+  color: #ff6b35;
+  font-weight: 600;
+}
+
+.tab-button.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #ff6b35;
+}
+
+/* Tab Content Styles */
+.tab-content {
+  padding: 32px;
+  background: #ffffff;
+  min-height: 400px;
+}
+
+/* Tab Content Component Styles */
+.basic-info-content,
+.astro-content,
+.family-content,
+.career-education-content,
+.spirituality-content,
+.personality-content,
+.preferences-content {
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  border: none;
+}
+
+.basic-info-content h3,
+.astro-content h3,
+.family-content h3,
+.career-education-content h3,
+.spirituality-content h3,
+.personality-content h3,
+.preferences-content h3 {
+  color: #ff6b35;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 32px;
+  font-family: "Plus Jakarta Sans", Helvetica, Arial, sans-serif;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.basic-info-content p,
+.astro-content p,
+.family-content p,
+.career-education-content p,
+.spirituality-content p,
+.personality-content p,
+.preferences-content p {
+  color: #1a1a1a;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 16px;
+  font-family: "Plus Jakarta Sans", Helvetica, Arial, sans-serif;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  border-left: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .tab-navigation {
+    padding: 12px;
+    gap: 6px;
+  }
+  
+  .tab-button {
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+  
+  .tab-content {
+    padding: 16px;
+  }
+  
+  .basic-info-content,
+  .astro-content,
+  .family-content,
+  .career-education-content,
+  .spirituality-content,
+  .personality-content,
+  .preferences-content {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tab-navigation {
+    padding: 8px;
+    gap: 4px;
+  }
+  
+  .tab-button {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+  
+  .tab-content {
+    padding: 12px;
+  }
+  
+  .basic-info-content,
+  .astro-content,
+  .family-content,
+  .career-education-content,
+  .spirituality-content,
+  .personality-content,
+  .preferences-content {
+    padding: 12px;
+  }
+}
+
+/* Active tab styles */
+.container-2 .overlap-group-wrapper.active,
+.container-2 .overlap-wrapper.active,
+.container-2 .list-rows-13.active,
+.container-2 .list-rows-14.active,
+.container-2 .list-rows-15.active {
+  background-color: #ff6b35 !important;
+  color: white !important;
+}
+
+.container-2 .overlap-group-wrapper.active .body-8,
+.container-2 .overlap-wrapper.active .body-9,
+.container-2 .list-rows-13.active .body-9,
+.container-2 .list-rows-14.active .body-9,
+.container-2 .list-rows-15.active .body-9 {
+  color: white !important;
+}
+
+/* Hover effect for tabs */
+.container-2 .overlap-group-wrapper:hover,
+.container-2 .overlap-wrapper:hover,
+.container-2 .list-rows-13:hover,
+.container-2 .list-rows-14:hover,
+.container-2 .list-rows-15:hover {
+  background-color: #ff8a65 !important;
+  transition: background-color 0.2s ease;
+}

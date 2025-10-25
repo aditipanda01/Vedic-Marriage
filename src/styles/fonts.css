@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Plus+Jakarta+Sans:700");
+
+.font-montserrat {
+  font-family: "Montserrat", Helvetica;
+}
+
+.font-plus-jakarta {
+  font-family: "Plus Jakarta Sans", Helvetica;
+}
+
+/* CSS Variables from original design */
+:root {
+  --background-color: rgba(244, 247, 254, 1);
+  --black: rgba(50, 50, 50, 1);
+  --blue: rgba(68, 120, 255, 1);
+  --caption-12pt-font-family: "Montserrat", Helvetica;
+  --caption-12pt-font-size: 12px;
+  --caption-12pt-font-style: normal;
+  --caption-12pt-font-weight: 400;
+  --caption-12pt-letter-spacing: 0px;
+  --caption-12pt-line-height: normal;
+  --e-84420: rgba(237, 97, 41, 1);
+  --grey: rgba(153, 153, 153, 1);
+  --label-11pt-font-family: "Montserrat", Helvetica;
+  --label-11pt-font-size: 11px;
+  --label-11pt-font-style: normal;
+  --label-11pt-font-weight: 400;
+  --label-11pt-letter-spacing: 0px;
+  --label-11pt-line-height: 16px;
+  --orange: rgba(231, 95, 40, 1);
+  --pink: rgba(242, 69, 136, 1);
+  --variable-collection-light-grey: rgba(150, 150, 150, 1);
+  --white: rgba(255, 255, 255, 1);
+} 

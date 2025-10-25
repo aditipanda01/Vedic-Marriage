@@ -1,0 +1,6 @@
+export { KYCVerification } from "./KYCVerification"
+export { KYCType } from "./KYCType"
+export { KYCFront } from "./KYCFront"
+export { KYCBack } from "./KYCBack"
+export { KYCPreview } from "./KYCPreview"
+export { KYCUploadSuccess } from "./KYCUploadSuccess" 

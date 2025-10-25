@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation 2 - How We Match</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    
+
+/* -----------------------s1 slider css end------------------------------------------ */
+.s2-graph-dashes {
+height: 0.125rem;
+width: 0.25rem;
+border-radius: 999rem;
+z-index: 20;
+background-color: rgb(75, 85, 99, 0.3);
+}
+
+.s2-image-container {
+position: relative;
+bottom: 1.5rem;
+z-index: -20;
+display: flex;
+height: 400px;
+width: 400px;
+align-items: center;
+justify-content: center;
+background-image: url('../assets/hourglass.jpeg');
+background-size: contain;
+background-repeat: no-repeat;
+}
+
+.s2-changeBlockGradient {
+top: -2rem;
+height: 20rem;
+width: 12rem;
+opacity: 0.5;
+filter: blur(4rem);
+position: absolute;
+
+z-index: -10;
+
+}
+
+.s2-block2-section {
+position: absolute;
+
+top: 6rem;
+
+display: flex;
+
+width: 100%;
+
+justify-content: center;
+
+border-radius: 1rem;
+
+
+
+}
+
+.s2-FadeAnimation {
+
+height: 0.5rem;
+
+width: 2rem;
+
+border-radius: 0.25rem;
+
+background-color: rgb(229, 231, 235);
+}
+
+.s2-SpringGrowAnimation {
+content: "";
+}
+
+.s2-block2-green-bar {
+width: 100%;
+background: linear-gradient(to bottom, rgba(74, 222, 128, 0.6), #10b981);
+border-radius: 0.5rem;
+}
+
+.s2-graph-bars-container {
+display: flex;
+
+width: 100%;
+
+flex-direction: column;
+
+align-items: center;
+
+gap: 0.5rem;
+}
+
+.s2-SpringGrowAnimation {
+width: 100%;
+border-radius: 0.5rem;
+}
+
+.s2-graph-bars-container:nth-child(1) .s2-SpringGrowAnimation {
+
+background: linear-gradient(to bottom, rgba(251, 191, 36, 0.6), #84cc16);
+
+height: 6rem;
+}
+
+.s2-graph-bars-container:nth-child(2) .s2-SpringGrowAnimation {
+
+background: linear-gradient(to bottom, rgba(168, 85, 247, 0.6), #a855f7, #f9a8d4);
+
+height: 6rem;
+}
+
+.s2-graph-bars-container:nth-child(3) .s2-SpringGrowAnimation {
+
+background: linear-gradient(to bottom, rgba(251, 191, 36, 0.6), #ec4899);
+
+height: 8rem;
+}
+
+.s2-graph-bars-container:nth-child(4) .s2-SpringGrowAnimation {
+
+background: linear-gradient(to bottom, rgba(251, 191, 36, 0.6), #84cc16);
+
+height: 6rem;
+}
+
+.s2-graph-bars-container:nth-child(5) .s2-SpringGrowAnimation {
+
+background: linear-gradient(to bottom, rgba(251, 191, 36, 0.6), #f87171, #f9a8d4);
+
+height: 7rem;
+}
+
+.s2-graph-bars-container:nth-child(6) .s2-SpringGrowAnimation {
+
+background: linear-gradient(to bottom, rgba(168, 85, 247, 0.6), #a855f7, #f9a8d4);
+
+height: 9rem;
+}
+
+.s2-div {
+position: relative;
+margin-top: 10rem;
+}
+
+@media screen and ((max-width: 300px) or (max-width: 800px)) {
+.s2-image-container {
+width: 300px;
+}
+
+.s2-div {
+position: relative;
+margin-top: 16rem;
+}
+}
+ 
+  </style>
+</head>
+<body>
+    <div class="s2-div">
+        <section id="s2-animation-section" style="min-height: 300vh; width: 100%;">
+            <div style="position: sticky; top: 0px; display: flex; height: 100vh; width: 100%; flex-direction: column; align-items: center; justify-content: center; overflow: hidden;">
+                <h1 style="position: relative; bottom: 3rem; font-size: 2rem; font-weight: 600; color: rgb(249,115,22);">
+                    How we Match?</h1>
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                    <div class="s2-image-container">
+                        <!-- block 1-->
+                        <section style="position: absolute; top: 0.5rem; display: flex; width: 100%; justify-content: center; border-radius: 0.75rem;" class="s2-section-reveal-anm">
+                            <div class="s2-changeBlockGradient bg-amber-500 absolute"></div>
+                            <section style="display: flex; align-items: center; justify-content: center;">
+                                <div class="relative w-full mx-4 md:w-[30vw] bg-white rounded-3xl shadow-lg">
+                                    <div class="relative overflow-hidden bg-slate-100">
+                                        <img class="w-full h-56 object-cover rounded-t-xl" src="./assets/slider-2/gif/Pre_2.gif" alt="Welcome">
+                                    </div>
+                                    <div class="absolute -right-4 top-4 w-28">
+                                        <div class="bg-white rounded-lg shadow-lg p-1">
+                                            <div class="">
+                                                <img src="./assets/slider-2/s2-overlay-image/loginnew.png" alt="Logo" class="w-full h-auto object-center object-cover rounded-lg"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-between gap-4 items-center px-6 pt-2 pb-4 mt-4">
+                                        <div class="flex flex-col w-2/3">
+                                            <h2 class="text-gray-900 text-lg title-font font-semibold">Welcome to Vedic Marriage</h2>
+                                            <p class="leading text-gray-600">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy.</p>
+                                            <a href="#"><button class="mt-4 mb-1 text-amber-500 inline-flex items-center rounded-lg">
+                                                Register now
+                                                <svg class="w-4 h-4 ml-2 mt-0.5" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path d="M5 12h14"></path>
+                                                    <path d="M12 5l7 7-7 7"></path>
+                                                </svg>
+                                            </button></a>
+                                        </div>
+                                        <div class="hidden sm:block w-12 h-12 w-1/3 bg-amber-400/20 p-3 rounded-full flex items-center justify-center">
+                                            <img src="./assets/slider-2/favicon.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </section>
+                        <!-- block 2-->
+                        <section style="position: absolute; top: 0.5rem; display: flex; width: 100%; justify-content: center; border-radius: 0.75rem;" class="s2-section-reveal-anm">
+                            <div class="s2-changeBlockGradient bg-amber-500 absolute"></div>
+                            <section style="display: flex; align-items: center; justify-content: center;">
+                                <div class="relative w-full mx-4 md:w-[30vw] bg-white rounded-3xl shadow-lg">
+                                    <div class="relative overflow-hidden bg-slate-100">
+                                        <img class="w-full h-56 object-cover rounded-t-xl" src="./assets/slider-2/gif/1_horroscope.gif" alt="">
+                                    </div>
+                                    <div class="absolute -right-4 top-4 w-28">
+                                        <div class="bg-white rounded-lg shadow-lg p-1">
+                                            <div class="">
+                                                <img src="./assets/slider-2/s2-overlay-image/loginnew.png" alt="Logo" class="w-full h-auto object-center object-cover rounded-lg"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-between gap-4 items-center px-6 pt-2 pb-4 mt-4">
+                                        <div class="flex flex-col w-2/3">
+                                            <h2 class="text-gray-900 text-lg title-font font-semibold">Horoscope</h2>
+                                            <p class="leading text-gray-600">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy.</p>
+                                            <a href="#"><button class="mt-4 mb-1 text-amber-500 inline-flex items-center rounded-lg">
+                                                Learn more
+                                                <svg class="w-4 h-4 ml-2 mt-0.5" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path d="M5 12h14"></path>
+                                                    <path d="M12 5l7 7-7 7"></path>
+                                                </svg>
+                                            </button></a>
+                                        </div>
+                                        <div class="hidden sm:block w-12 h-12 w-1/3 bg-amber-400/20 p-3 rounded-full flex items-center justify-center">
+                                            <img src="./assets/slider-2/favicon.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </section>
+                        <!-- block 3-->
+                        <section style="position: absolute; top: 0.5rem; display: flex; width: 100%; justify-content: center; border-radius: 0.75rem;" class="s2-section-reveal-anm">
+                            <div class="s2-changeBlockGradient bg-amber-500 absolute"></div>
+                            <section style="display: flex; align-items: center; justify-content: center;">
+                                <div class="relative w-full mx-4 md:w-[30vw] bg-white rounded-3xl shadow-lg">
+                                    <div class="relative overflow-hidden bg-slate-100">
+                                        <img class="w-full h-56 object-cover rounded-t-xl" src="./assets/slider-2/gif/3_economical.gif" alt="">
+                                    </div>
+                                    <div class="absolute -right-4 top-4 w-28">
+                                        <div class="bg-white rounded-lg shadow-lg p-1">
+                                            <div class="">
+                                                <img src="./assets/slider-2/s2-overlay-image/loginnew.png" alt="Logo" class="w-full h-auto object-center object-cover rounded-lg"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-between gap-4 items-center px-6 pt-2 pb-4 mt-4">
+                                        <div class="flex flex-col w-2/3">
+                                            <h2 class="text-gray-900 text-lg title-font font-semibold">Economic</h2>
+                                            <p class="leading text-gray-600">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy.</p>
+                                            <a href="#"><button class="mt-4 mb-1 text-amber-500 inline-flex items-center rounded-lg">
+                                                Learn more
+                                                <svg class="w-4 h-4 ml-2 mt-0.5" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path d="M5 12h14"></path>
+                                                    <path d="M12 5l7 7-7 7"></path>
+                                                </svg>
+                                            </button></a>
+                                        </div>
+                                        <div class="hidden sm:block w-12 h-12 w-1/3 bg-amber-400/20 p-3 rounded-full flex items-center justify-center">
+                                            <img src="./assets/slider-2/favicon.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </section>
+                        <!-- block 4-->
+                        <section style="position: absolute; top: 0.5rem; display: flex; width: 100%; justify-content: center; border-radius: 0.75rem;" class="s2-section-reveal-anm">
+                            <div class="s2-changeBlockGradient bg-amber-500 absolute"></div>
+                            <section style="display: flex; align-items: center; justify-content: center;">
+                                <div class="relative w-full mx-4 md:w-[30vw] bg-white rounded-3xl shadow-lg">
+                                    <div class="relative overflow-hidden bg-slate-100">
+                                        <img class="w-full h-56 object-cover rounded-t-xl" src="./assets/slider-2/gif/2_social_cultural.gif" alt="">
+                                    </div>
+                                    <div class="absolute -right-4 top-4 w-28">
+                                        <div class="bg-white rounded-lg shadow-lg p-1">
+                                            <div class="">
+                                                <img src="./assets/slider-2/s2-overlay-image/slider-img-5.png" alt="Logo" class="w-full h-auto object-center object-cover rounded-lg"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-between gap-4 items-center px-6 pt-2 pb-4 mt-4">
+                                        <div class="flex flex-col w-2/3">
+                                            <h2 class="text-gray-900 text-lg title-font font-semibold">Social Culture</h2>
+                                            <p class="leading text-gray-600">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy.</p>
+                                            <a href="#"><button class="mt-4 mb-1 text-amber-500 inline-flex items-center rounded-lg">
+                                                Learn more
+                                                <svg class="w-4 h-4 ml-2 mt-0.5" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path d="M5 12h14"></path>
+                                                    <path d="M12 5l7 7-7 7"></path>
+                                                </svg>
+                                            </button></a>
+                                        </div>
+                                        <div class="hidden sm:block w-12 h-12 w-1/3 bg-amber-400/20 p-3 rounded-full flex items-center justify-center">
+                                            <img src="./assets/slider-2/favicon.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </section>
+                        <!-- block 5-->
+                        <section style="position: absolute; top: 0.5rem; display: flex; width: 100%; justify-content: center; border-radius: 0.75rem;" class="s2-section-reveal-anm">
+                            <div class="s2-changeBlockGradient bg-amber-500 absolute"></div>
+                            <section style="display: flex; align-items: center; justify-content: center;">
+                                <div class="relative w-full mx-4 md:w-[30vw] bg-white rounded-3xl shadow-lg">
+                                    <div class="relative overflow-hidden bg-slate-100">
+                                        <img class="w-full h-56 object-cover rounded-t-xl" src="./assets/slider-2/gif/4_spiritual.gif" alt="Image 5">
+                                    </div>
+                                    <div class="absolute -right-4 top-4 w-28">
+                                        <div class="bg-white rounded-lg shadow-lg p-1">
+                                            <div class="">
+                                                <img src="./assets/slider-2/s2-overlay-image/loginnew.png" alt="Logo" class="w-full h-auto object-center object-cover rounded-lg"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-between gap-4 items-center px-6 pt-2 pb-4 mt-4">
+                                        <div class="flex flex-col w-2/3">
+                                            <h2 class="text-gray-900 text-lg title-font font-semibold">Spiritual</h2>
+                                            <p class="leading text-gray-600">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy.</p>
+                                            <a href="#"><button class="mt-4 mb-1 text-amber-500 inline-flex items-center rounded-lg">
+                                                Learn more
+                                                <svg class="w-4 h-4 ml-2 mt-0.5" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path d="M5 12h14"></path>
+                                                    <path d="M12 5l7 7-7 7"></path>
+                                                </svg>
+                                            </button></a>
+                                        </div>
+                                        <div class="hidden sm:block w-12 h-12 w-1/3 bg-amber-400/20 p-3 rounded-full flex items-center justify-center">
+                                            <img src="./assets/slider-2/favicon.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </section>
+                        <!-- block 6-->
+                        <section style="position: absolute; top: 0.5rem; display: flex; width: 100%; justify-content: center; border-radius: 0.75rem;" class="s2-section-reveal-anm">
+                            <div class="s2-changeBlockGradient bg-amber-500 absolute"></div>
+                            <section style="display: flex; align-items: center; justify-content: center;">
+                                <div class="relative w-full mx-4 md:w-[30vw] bg-white rounded-3xl shadow-lg">
+                                    <div class="relative overflow-hidden bg-slate-100">
+                                        <img class="w-full h-56 object-cover rounded-t-xl" src="./assets/slider-2/gif/Post_final.gif" alt="">
+                                    </div>
+                                    <div class="absolute -right-4 top-4 w-28">
+                                        <div class="bg-white rounded-lg shadow-lg p-1">
+                                            <div class="">
+                                                <img src="./assets/slider-2/s2-overlay-image/slider-img-5.png" alt="Logo" class="w-full h-auto object-center object-cover rounded-lg"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-between gap-4 items-center px-6 pt-2 pb-4 mt-4">
+                                        <div class="flex flex-col w-2/3">
+                                            <h2 class="text-gray-900 text-lg title-font font-semibold">Home (default)</h2>
+                                            <p class="leading text-gray-600">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy.</p>
+                                            <a href="#"><button class="mt-4 mb-1 text-amber-500 inline-flex items-center rounded-lg">
+                                                Learn more
+                                                <svg class="w-4 h-4 ml-2 mt-0.5" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path d="M5 12h14"></path>
+                                                    <path d="M12 5l7 7-7 7"></path>
+                                                </svg>
+                                            </button></a>
+                                        </div>
+                                        <div class="hidden sm:block w-12 h-12 w-1/3 bg-amber-400/20 p-3 rounded-full flex items-center justify-center">
+                                            <img src="./assets/slider-2/favicon.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </section>
+                    </div>
+                    <div class="s2-iconContainer relative top-[400px]">
+                        <div class="s2-icon-wrapper cursor-pointer absolute w-16 h-16">
+                            <div class="s2-arc-icon p-4 absolute w-full h-full flex items-center justify-center shadow-md border-orange-600/30 shadow-rose-600/10 rounded-2xl bg-white" data-index="1">
+                                🤝
+                            </div>
+                        </div>
+                        <div class="s2-icon-wrapper cursor-pointer absolute w-16 h-16">
+                            <div class="s2-arc-icon p-4 absolute w-full h-full flex items-center justify-center shadow-md border-green-600/30 shadow-orange-600/10 rounded-2xl bg-white" data-index="2">
+                                <img src="./assets/slider-2/icon-container/kundali-img.png" alt="Horoscope"/>
+                            </div>
+                        </div>
+                        <div class="s2-icon-wrapper cursor-pointer absolute w-16 h-16">
+                            <div class="s2-arc-icon p-4 absolute w-full h-full flex items-center justify-center shadow-md border-fuchsia-600/30 shadow-rose-400/10 rounded-2xl bg-white" data-index="3">
+                                <img src="./assets/slider-2/icon-container/scales.png" alt="Economic"/>
+                            </div>
+                        </div>
+                        <div class="s2-icon-wrapper cursor-pointer absolute w-16 h-16">
+                            <div class="s2-arc-icon p-4 absolute w-full h-full flex items-center justify-center shadow-md border-emerald-600/30 shadow-orange-600/10 rounded-2xl bg-white" data-index="4">
+                                <img src="./assets/slider-2/icon-container/p6.png" alt="Social Culture"/>
+                            </div>
+                        </div>
+                        <div class="s2-icon-wrapper cursor-pointer absolute w-16 h-16">
+                            <div class="s2-arc-icon p-4 absolute w-full h-full flex items-center justify-center shadow-md border-amber-600/30 shadow-rose-600/10 rounded-2xl bg-white" data-index="5">
+                                <img src="./assets/slider-2/icon-container/m-2.png" alt="Spiritual"/>
+                            </div>
+                        </div>
+                        <div class="s2-icon-wrapper cursor-pointer absolute w-16 h-16">
+                            <div class="s2-arc-icon p-4 absolute w-full h-full flex items-center justify-center shadow-md border-purple-600/30 shadow-amber-600/10 rounded-2xl bg-white" data-index="6">
+                                <img src="./assets/slider-2/favicon.png" alt="Home"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+
+const iconWrappers = document.querySelectorAll('.s2-icon-wrapper');
+const iconsSelector = document.querySelectorAll('.s2-arc-icon');
+const imagesSelector = document.querySelectorAll('.s2-section-reveal-anm');
+const radius = 350;
+const totalIcons = iconsSelector.length;
+
+// Initialize images
+gsap.set(imagesSelector, { opacity: 0 });
+gsap.set(imagesSelector[0], { opacity: 1 });
+// Set initial opacity for all icons
+gsap.set(iconsSelector, { opacity: 0 });
+
+gsap.set(iconsSelector[0], { opacity: 1, scale: 1.25 });
+gsap.set(iconsSelector[1], { opacity: 0.35, scale: 0.9 });
+gsap.set(iconsSelector[2], { opacity: 0.35, scale: 0.9 });
+
+// Function to calculate s2-arc-icon positions based on progress
+function setIconPositions(progress) {
+    console.log(progress);
+    iconWrappers.forEach((wrapper, index) => {
+        const startAngledeg = -90;
+        const startAngle = startAngledeg * (Math.PI / 180);
+        // const arcLength = (3.14/180)*130;
+        const arcLength = 1.20;
+        const angle = startAngle + (index / (totalIcons - 1)) * arcLength - progress * arcLength;
+        const x = Math.cos(angle) * radius;
+        const y = Math.sin(angle) * radius;
+        gsap.set(wrapper, {
+            x: x,
+            y: y,
+            rotation: 0,
+        });
+    });
+}
+
+// Function to calculate target progress for centering an icon
+function getTargetProgressForIndex(index) {
+    return index / (totalIcons - 1);
+}
+
+// Define background colors
+const bgGrads = [
+    '#ffa1ad', // orange
+    '#ffa1ad', // green
+    '#ffa1ad', // fuchsia
+    '#ffa1ad', // green
+    '#ffa1ad', // amber
+    '#ffa1ad', // violet
+];
+
+// Function to update visible image and s2-arc-icon opacities
+let currentVisibleIndex = -1;
+function updateVisibleImage(closestIndex) {
+
+    if (closestIndex !== currentVisibleIndex) {
+        currentVisibleIndex = closestIndex; // Keep track of the currently active index
+
+        imagesSelector.forEach((section, idx) => {
+            const elemGradientDiv = section.querySelector('.s2-changeBlockGradient');
+            const addSpringGrowVar = section.querySelectorAll('.s2-SpringGrowAnimation');
+            const addFadeVar = section.querySelectorAll('.s2-FadeAnimation');
+            if (idx !== closestIndex) {
+                // Reset non-active sections
+                gsap.to(section, {
+                    opacity: 0,
+                    // y: 40, // Slide down blocks when becoming inactive
+                    y: 20, // Slight movement instead of large jumps
+                    duration: 0.3,
+                    ease: "power2.out",
+                });
+                gsap.to(elemGradientDiv, {
+                    backgroundColor: 'transparent',
+                    duration: 0.3,
+                });
+            } else {
+                // Animate the active section with slide-up
+                gsap.to(
+                    section,
+                    {
+                        opacity: 1,
+                        y: 0, // Keep the position stable for smoother transition
+                        duration: 0.5, // Slightly longer duration for smooth appearance
+                        ease: "power2.out",
+                    });
+
+
+                gsap.to(elemGradientDiv, {
+                    backgroundColor: bgGrads[closestIndex],
+                    duration: 0.5,
+                });
+                // Spring-grow animation for green bars
+                gsap.fromTo(
+                    addSpringGrowVar,
+                    { scaleY: 0, transformOrigin: "bottom" },
+                    {
+                        scaleY: 1,
+                        duration: 1.5,
+                        stagger: 0,
+                        ease: "elastic.out(0.5, 0.3)",
+                    }
+                );
+                // Fade animation for horizontal gray bars
+                gsap.fromTo(
+                    addFadeVar,
+                    { opacity: 0 },
+                    {
+                        opacity: 1,
+                        duration: 1,
+                        stagger: 0,
+                        ease: "power2.out",
+                    }
+                );
+            }
+        });
+        // Update s2-arc-icon opacities (updated here)
+        iconsSelector.forEach((icon, idx) => {
+            const distance = Math.abs(idx - closestIndex);
+            const isInVisibilityWindow = distance <= 2; // Show only if within 2 positions
+
+            gsap.to(icon, {
+                opacity: isInVisibilityWindow ? (idx === closestIndex ? 1 : 0.35) : 0, // Hide icons outside window
+                // scale: idx === closestIndex ? 1.25 : (isInVisibilityWindow ? 0.9 : 0.5),
+                scale: idx === closestIndex ? 1.25 : isInVisibilityWindow ? 0.9 : 0.7,
+                duration: 0.4,
+                ease: "power2.out",
+                onStart: () => {
+                    icon.style.pointerEvents = isInVisibilityWindow ? 'auto' : 'none';
+                }
+            });
+        });
+    }
+}
+
+// Set initial positions
+setIconPositions(0);
+
+// Create the scroll trigger animation
+gsap.to({}, {
+    scrollTrigger: {
+        trigger: '#s2-animation-section',
+        start: 'top top',
+        end: 'bottom bottom',
+        scrub: 50, // responsiveness of block re-renders also controls the duration of snap detection
+        snap: {
+
+            // added snap here
+            snapTo: (progress) => {
+                // Calculate snapping points based on the number of icons
+                const snapPoints = Array.from({ length: totalIcons }, (_, i) => i / (totalIcons - 1));
+                return gsap.utils.snap(snapPoints, progress);
+            },
+            duration: 0.3, // Optional: Snap animation duration
+            directional: true, // Snap in the direction of scrolling
+        },
+
+        onUpdate: (self) => {
+            setIconPositions(self.progress);
+            let closestIndex = -1;
+            let minDistance = Infinity;
+            iconsSelector.forEach((icon, index) => {
+                const rect = icon.getBoundingClientRect();
+                const centerX = rect.left + rect.width / 2;
+                const centerY = rect.top + rect.height / 2;
+                const distanceToCenter = Math.sqrt(
+                    (window.innerWidth / 2 - centerX) ** 2
+                    +
+                    (window.innerHeight / 2 - centerY) ** 2
+                );
+                if (distanceToCenter < minDistance) {
+                    minDistance = distanceToCenter;
+                    closestIndex = index;
+                }
+            });
+            updateVisibleImage(closestIndex);
+        },
+    },
+});
+
+// Initial animation for icons appearing
+gsap.from(iconsSelector, {
+    scale: 0,
+    opacity: 0,
+    duration: 1,
+    stagger: 0.1,
+    ease: 'back.out',
+});
+
+// Add click handlers to icons
+iconsSelector.forEach((icon, index) => {
+    // Hover animations
+    icon.addEventListener('mouseenter', () => {
+        gsap.to(icon, { scale: 1.1, duration: 0.3, ease: 'back.out' });
+    });
+    icon.addEventListener('mouseleave', () => {
+        gsap.to(icon, { scale: 1, duration: 0.3, ease: 'back.out' });
+    });
+    // Click to center animation
+    icon.addEventListener('click', () => {
+        const targetProgress = getTargetProgressForIndex(index);
+        const section = document.querySelector('#s2-animation-section');
+        const scrollAmount = targetProgress * (section.offsetHeight - window.innerHeight);
+        gsap.to(window, {
+            duration: 1,
+            scrollTo: {
+                y: scrollAmount,
+                autoKill: false,
+            },
+            ease: 'power2.inOut',
+        });
+    });
+});
+    </script>
+</body>
+</html>

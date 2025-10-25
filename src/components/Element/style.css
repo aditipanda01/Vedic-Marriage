@@ -1,0 +1,11 @@
+.element {
+  background-color: #d9d9d9;
+  height: 48px;
+  position: relative;
+  width: 48px;
+}
+
+.element .info-instance {
+  left: 12px !important;
+  top: 12px !important;
+}

@@ -1,0 +1,726 @@
+ .profile-details .container {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 8px;
+  left: 16px;
+  position: absolute;
+  top: 560px;
+  width: 358px;
+}
+ .profile-details .container .div {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 8px;
+  position: relative;
+  width: 358px;
+}
+
+.profile-details .container .frame-wrapper {
+  align-items: center;
+  display: flex;
+  height: 40px;
+  padding: 8px;
+  position: relative;
+  width: 358px;
+}
+
+.profile-details .container .frame {
+  align-items: flex-start;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 4px;
+  position: relative;
+}
+
+.profile-details .container .body {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  align-self: stretch;
+  color: var(--e-84420);
+  display: -webkit-box;
+  font-family: "Plus Jakarta Sans", Helvetica;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 16px;
+  margin-top: -1.00px;
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+}
+
+.profile-details .container .list-rows-instance {
+  width: 175px !important;
+}
+
+.profile-details .container .design-component-instance-node {
+  font-family: "Plus Jakarta Sans", Helvetica !important;
+  font-size: 14px !important;
+  height: 24px !important;
+  width: 143px !important;
+}
+
+.profile-details .container .list-rows-2 {
+  color: var(--variable-collection-light-grey) !important;
+  font-family: "Plus Jakarta Sans", Helvetica !important;
+  font-weight: 700 !important;
+  width: 143px !important;
+}
+
+.profile-details .container .list-rows-3 {
+  font-family: "Plus Jakarta Sans", Helvetica !important;
+  font-size: 14px !important;
+  height: 16px !important;
+  top: 27px !important;
+  white-space: nowrap !important;
+  width: unset !important;
+}
+
+.profile-details .container .ethnicity {
+  font-family: "Raleway", Helvetica !important;
+  font-size: 14px !important;
+  height: 16px !important;
+  top: 27px !important;
+  white-space: nowrap !important;
+  width: unset !important;
+}
+
+.profile-details .container .astro {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 8px;
+  position: relative;
+  width: 358px;
+}
+
+.profile-details .container .list-rows-4 {
+  color: var(--variable-collection-light-grey) !important;
+  font-family: "Plus Jakarta Sans", Helvetica !important;
+  font-weight: 700 !important;
+  width: unset !important;
+}
+
+.profile-details .container .family-details {
+  flex: 1;
+  flex-grow: 1;
+  height: 408px;
+  position: relative;
+}
+
+.profile-details .container .list-rows-5 {
+  color: var(--orange) !important;
+  font-family: "Plus Jakarta Sans", Helvetica !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  height: 16px !important;
+  top: 11px !important;
+  white-space: nowrap !important;
+  width: unset !important;
+}
+
+.profile-details .container .list-rows-6 {
+  height: 40px !important;
+  left: 0 !important;
+  position: absolute !important;
+  top: 0 !important;
+  width: 358px !important;
+}
+
+.profile-details .container .father-name {
+  left: 0 !important;
+  position: absolute !important;
+  top: 48px !important;
+  width: 160px !important;
+}
+
+.profile-details .container .list-rows-7 {
+  font-family: "Plus Jakarta Sans", Helvetica !important;
+  font-size: 14px !important;
+  height: 24px !important;
+  width: 128px !important;
+}
+
+.profile-details .container .list-rows-8 {
+  color: var(--variable-collection-light-grey) !important;
+  font-family: "Plus Jakarta Sans", Helvetica !important;
+  font-weight: 700 !important;
+  width: 128px !important;
+}
+
+.profile-details .container .mother-name {
+  left: 168px !important;
+  position: absolute !important;
+  top: 48px !important;
+  width: 160px !important;
+}
+
+.profile-details .container .father-employment {
+  left: 0 !important;
+  position: absolute !important;
+  top: 112px !important;
+  width: 160px !important;
+}
+
+.profile-details .container .mother-employment {
+  left: 168px !important;
+  position: absolute !important;
+  top: 112px !important;
+  width: 160px !important;
+}
+
+.profile-details .container .family-location {
+  left: 0 !important;
+  position: absolute !important;
+  top: 176px !important;
+  width: 160px !important;
+}
+
+.profile-details .container .family-value {
+  left: 168px !important;
+  position: absolute !important;
+  top: 176px !important;
+  width: 160px !important;
+}
+
+.profile-details .container .family-affluence {
+  left: 0 !important;
+  position: absolute !important;
+  top: 240px !important;
+  width: 160px !important;
+}
+
+.profile-details .container .sibling-details {
+  height: 40px !important;
+  left: 0 !important;
+  position: absolute !important;
+  top: 304px !important;
+  width: 360px !important;
+}
+
+.profile-details .container .list-rows-9 {
+  color: var(--variable-collection-light-grey) !important;
+  font-family: "Plus Jakarta Sans", Helvetica !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  height: 16px !important;
+  top: 11px !important;
+  white-space: nowrap !important;
+  width: unset !important;
+}
+
+.profile-details .container .brother-number {
+  left: 0 !important;
+  position: absolute !important;
+  top: 352px !important;
+  width: 160px !important;
+}
+
+.profile-details .container .sister-number {
+  left: 168px !important;
+  position: absolute !important;
+  top: 352px !important;
+  width: 160px !important;
+}
+
+.profile-details .container .list-rows-10 {
+  height: 40px !important;
+  width: 358px !important;
+}
+
+.profile-details .container .list-rows-11 {
+  width: 160px !important;
+}
+
+.profile-details .container .spiritual {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  position: relative;
+  width: 358px;
+}
+
+.profile-details .container .spiritual-2 {
+  flex: 1;
+  flex-grow: 1;
+  height: 1062px;
+  position: relative;
+}
+
+.profile-details .container .org {
+  left: 0 !important;
+  position: absolute !important;
+  top: 48px !important;
+  width: 358px !important;
+}
+
+.profile-details .container .org-2 {
+  font-family: "Plus Jakarta Sans", Helvetica !important;
+  font-size: 14px !important;
+  height: 16px !important;
+  top: 31px !important;
+  white-space: nowrap !important;
+  width: unset !important;
+}
+
+.profile-details .container .how-long {
+  left: 0 !important;
+  position: absolute !important;
+  top: 112px !important;
+  width: 175px !important;
+}
+
+.profile-details .container .chanting-rounds {
+  left: 183px !important;
+  position: absolute !important;
+  top: 112px !important;
+  width: 175px !important;
+}
+
+.profile-details .container .intiated-status {
+  left: 0 !important;
+  position: absolute !important;
+  top: 176px !important;
+  width: 358px !important;
+}
+
+.profile-details .container .list-rows-12 {
+  font-family: "Plus Jakarta Sans", Helvetica !important;
+  font-size: 14px !important;
+  height: 24px !important;
+  width: 326px !important;
+}
+
+.profile-details .container .spiritual-master {
+  left: 0 !important;
+  position: absolute !important;
+  top: 240px !important;
+  width: 358px !important;
+}
+
+.profile-details .container .initiated-name {
+  left: 0 !important;
+  position: absolute !important;
+  top: 304px !important;
+  width: 358px !important;
+}
+
+.profile-details .container .local-temple {
+  left: 0 !important;
+  position: absolute !important;
+  top: 368px !important;
+  width: 358px !important;
+}
+
+.profile-details .container .local-temple-2 {
+  color: var(--variable-collection-light-grey) !important;
+  font-family: "Plus Jakarta Sans", Helvetica !important;
+  font-weight: 700 !important;
+  width: 326px !important;
+}
+
+.profile-details .container .affiliation {
+  left: 0 !important;
+  position: absolute !important;
+  top: 432px !important;
+  width: 358px !important;
+}
+
+.profile-details .container .how-often-visit {
+  left: 0 !important;
+  position: absolute !important;
+  top: 496px !important;
+  width: 358px !important;
+}
+
+.profile-details .container .ekadashi-fasting {
+  left: 0 !important;
+  position: absolute !important;
+  top: 560px !important;
+  width: 358px !important;
+}
+
+.profile-details .container .element-regulative {
+  left: 0 !important;
+  position: absolute !important;
+  top: 624px !important;
+  width: 358px !important;
+}
+
+.profile-details .container .spiritual-role {
+  left: 0 !important;
+  position: absolute !important;
+  top: 688px !important;
+  width: 358px !important;
+}
+
+.profile-details .container .prabhupada-books {
+  align-items: center;
+  display: flex;
+  left: 0;
+  padding: 8px 16px;
+  position: absolute;
+  top: 752px;
+  width: 358px;
+}
+
+.profile-details .container .div-2 {
+  align-items: flex-start;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 8px;
+  position: relative;
+}
+
+.profile-details .container .label {
+  align-self: stretch;
+  color: var(--variable-collection-light-grey);
+  font-family: "Plus Jakarta Sans", Helvetica;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 16px;
+  margin-top: -1.00px;
+  position: relative;
+}
+
+.profile-details .container .body-pt {
+  align-self: stretch;
+  color: transparent;
+  font-family: "Montserrat", Helvetica;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 12px;
+  position: relative;
+}
+
+.profile-details .container .text-wrapper {
+  color: #676767;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.profile-details .container .span {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.profile-details .container .text-wrapper-2 {
+  color: #e65e28;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.profile-details .container .parent-kc {
+  left: 0 !important;
+  position: absolute !important;
+  top: 942px !important;
+  width: 358px !important;
+}
+
+.profile-details .container .spiritual-guide {
+  left: 0 !important;
+  position: absolute !important;
+  top: 1006px !important;
+  width: 358px !important;
+}
+
+.profile-details .container .personality-title {
+  color: var(--orange) !important;
+  font-family: "Plus Jakarta Sans", Helvetica !important;
+  font-weight: 800 !important;
+  height: 16px !important;
+  top: 11px !important;
+  white-space: nowrap !important;
+  width: unset !important;
+}
+
+.profile-details .container .diet {
+  align-items: center;
+  align-self: stretch;
+  border-radius: 8px;
+  display: flex;
+  height: 56px;
+  padding: 8px 16px;
+  position: relative;
+  width: 100%;
+}
+
+.profile-details .container .frame-2 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: center;
+  position: relative;
+  width: 228px;
+}
+
+.profile-details .container .label-pt {
+  color: var(--black);
+  font-family: "Montserrat", Helvetica;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 16px;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.profile-details .container .body-2 {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  color: var(--black);
+  display: -webkit-box;
+  font-family: "Montserrat", Helvetica;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 16px;
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.profile-details .container .div-3 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.profile-details .container .frame-wrapper-2 {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 8px;
+  padding: 16px;
+  position: relative;
+  width: 358px;
+}
+
+.profile-details .container .body-wrapper {
+  align-items: flex-start;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 4px;
+  justify-content: center;
+  position: relative;
+}
+
+.profile-details .container .body-3 {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  color: var(--black);
+  display: -webkit-box;
+  font-family: "Montserrat", Helvetica;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 16px;
+  margin-top: -1.00px;
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.profile-details .container .personality-question {
+  align-items: flex-start;
+  align-self: stretch;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: #ebebeb;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  padding: 8px 16px;
+  position: relative;
+  width: 100%;
+}
+
+.profile-details .container .autolayout-row {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  gap: 8px;
+  height: 56px;
+  position: relative;
+  width: 100%;
+}
+
+.profile-details .container .label-2 {
+  align-self: stretch;
+  color: var(--variable-collection-light-grey);
+  font-family: "Montserrat", Helvetica;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 16px;
+  margin-top: -1.00px;
+  position: relative;
+}
+
+.profile-details .container .test-variant {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  align-self: stretch;
+  color: var(--black);
+  display: -webkit-box;
+  font-family: var(--body-14pt-font-family);
+  font-size: var(--body-14pt-font-size);
+  font-style: var(--body-14pt-font-style);
+  font-weight: var(--body-14pt-font-weight);
+  letter-spacing: var(--body-14pt-letter-spacing);
+  line-height: var(--body-14pt-line-height);
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+}
+
+.profile-details .container .hover-variant {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  color: #676767;
+  display: -webkit-box;
+  font-family: "Montserrat", Helvetica;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 16px;
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.profile-details .container .p {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  color: #676767;
+  display: -webkit-box;
+  font-family: "Montserrat", Helvetica;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 16px;
+  margin-right: -2.00px;
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.profile-details .container .hover-variant-2 {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  color: #676767;
+  display: -webkit-box;
+  font-family: "Montserrat", Helvetica;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 16px;
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.profile-details .container .frame-wrapper-3 {
+  align-items: center;
+  align-self: stretch;
+  border-radius: 8px;
+  display: flex;
+  gap: 8px;
+  height: 32px;
+  padding: 8px 0px 8px 16px;
+  position: relative;
+  width: 100%;
+}
+
+.profile-details .container .label-3 {
+  color: var(--black);
+  font-family: "Montserrat", Helvetica;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 16px;
+  margin-top: -1.00px;
+  position: relative;
+  width: 228px;
+}
+
+.profile-details .container .partner {
+  align-items: flex-start;
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  gap: 8px 8px;
+  position: relative;
+  width: 358px;
+}
+
+.profile-details .container .frame-wrapper-4 {
+  align-items: center;
+  display: flex;
+  padding: 8px;
+  position: relative;
+  width: 358px;
+}
+
+.profile-details .container .body-4 {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  align-self: stretch;
+  color: #676767;
+  display: -webkit-box;
+  font-family: "Plus Jakarta Sans", Helvetica;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 16px;
+  margin-top: -1.00px;
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+}
+
+.profile-details .container .body-5 {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  align-self: stretch;
+  color: #000000;
+  display: -webkit-box;
+  font-family: "Plus Jakarta Sans", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 16px;
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+}
